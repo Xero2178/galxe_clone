@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALXE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body
+    class="flex min-h-screen flex-col bg-gradient-to-r from-black via-purple-900 to-black text-white"
+  >
+    <header
+      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-lg"
+    >
+      <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
+        <section class="flex flex-1 items-center justify-between">
+          <ul class="flex space-x-8 align-baseline text-lg">
+            <li>
+              <a href=""
+                ><img src="img/new-logo.bc3e2ed.svg" alt="" width="100%"
+              /></a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Explore</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Spaces</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Credentials</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Solutions</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Galxe ID</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">More</a>
+            </li>
+          </ul>
+        </section>
+        <section class="flex justify-between gap-8">
+          <a href="" class="hidden xl:block"
+            ><button class="rounded-2xl bg-blue-600 px-4 py-2 font-medium">
+              2-years Anniversary Celebration
+            </button></a
+          >
+          <a href="" class="hidden xl:block"
+            ><button class="rounded-2xl px-3 py-2 font-medium">
+              Connect Wallet
+            </button></a
+          >
+
+          <button
+            class="relative block h-8 w-8 cursor-pointer text-3xl xl:hidden"
+            id="hamburger-button"
+          >
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+        </section>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-5xl"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                    &times;
+                </button> -->
+
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="" class="w-full py-6 text-center hover:opacity-90"
+            >Explore</a
+          >
+          <a href="" class="w-full py-6 text-center hover:opacity-90">Spaces</a>
+          <a href="" class="w-full py-6 text-center hover:opacity-90"
+            >Credentials</a
+          >
+          <a href="" class="w-full py-6 text-center hover:opacity-90"
+            >Solutions</a
+          >
+          <a href="" class="w-full py-6 text-center hover:opacity-90"
+            >Galxe ID</a
+          >
+          <a href="" class="w-full py-6 text-center hover:opacity-90">More</a>
+        </nav>
+      </section>
+    </header>
+    <main class="mx-5 text-center">
+      <h1
+        class="mb-24 max-w-7xl text-center text-3xl font-extrabold md:text-4xl lg:mx-auto lg:text-5xl xl:text-6xl"
+      >
+        Build Your Digital Identity and Earn
+        <span class="text-blue-600">Tokens</span>
+      </h1>
+      <section
+        class="mx-auto flex max-w-full items-center justify-center"
+      >
+        <div class="relative w-full">
+          <div class="flex">
+            <div class="lfloat absolute h-80 w-1/2"></div>
+            <div class="rfloat absolute left-1/2 h-80 w-1/2"></div>
+          </div>
+          <div
+            class="lbutton absolute top-1/3 h-16 w-16 rounded-full bg-transparent"
+          ></div>
+          <div
+            class="rbutton absolute top-1/3 left-[96%] h-16 w-16 rounded-full bg-transparent"
+          ></div>
+          <div class="mx-0 flex space-x-4 md:mx-8 xl:space-x-8">
+            <div class="md:w-88 mb-9 w-full xl:w-full">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/rubic icon.webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  Swap to Earn: The Innovative Way
+                </p>
+              </div>
+            </div>
+            <div class="md:w-88 hidden w-full lg:block xl:w-full">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/1678799057122-Frame 1171274652.webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">Galxe</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  Galxe Community Missions- Season 2
+                </p>
+              </div>
+            </div>
+            <div class="md:w-88 hidden w-full md:block xl:w-full">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/1679625102518-image (3).webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">SPACE ID</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  SPACE ID Voyage season-2 Calling
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section
+      class="flex min-h-fit flex-col bg-gradient-to-r from-blue-600 via-purple-400 to-blue-900 p-8"
+    >
+      <div class="mb-8 flex align-baseline">
+        <img src="./img/telescope.png" alt="" width="40px" />
+        <h2 class="px-2 text-3xl font-bold">Galxe Selects</h2>
+      </div>
+      <div class="flex w-full space-x-2">
+        <div class="h-72 w-full rounded-lg bg-gray-900 p-3 md:w-1/2 lg:w-1/3">
+          <div
+            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
+          >
+            Achieve web3 creditworthiness and reap your rewards!
+          </div>
+          <button
+            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
+          >
+            OAT</button
+          ><br />
+          <p class="truncate px-3 font-bold">
+            Cred Protocol: Web3 credit score is 'Good' or better (April '23)
+          </p>
+          <img
+            src="/build/img/spaces-1.webp"
+            alt=""
+            class="float-right mt-4 mr-4 h-24 w-24"
+          />
+          <div class="flex px-3 text-base font-light text-gray-300">
+            <p class="pt-1">Cred Protocol</p>
+          </div>
+        </div>
+        <div
+          class="hidden h-72 w-full rounded-lg bg-gray-900 p-3 md:block md:w-1/2 lg:w-1/3"
+        >
+          <div
+            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
+          >
+            Experience the power of decentralization and become early adopters!
+          </div>
+          <button
+            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
+          >
+            NFT</button
+          ><br />
+          <p class="truncate px-3 font-bold">
+            Super Protocol Testnet Phase2 Incentivized: Ear
+          </p>
+          <img
+            src="/build/img/zklink-logo2.webp"
+            alt=""
+            class="float-right h-36 w-36"
+          />
+          <div class="flex px-3 text-base font-light text-gray-300">
+            <p class="pt-1">Super Protocol</p>
+          </div>
+        </div>
+
+        <div
+          class="hidden h-72 w-full rounded-lg bg-gray-900 p-3 md:w-1/2 lg:block lg:w-1/3"
+        >
+          <div
+            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
+          >
+            Embark on quests with Optimism and unlock exclusive NFTs!
+          </div>
+          <button
+            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
+          >
+            NFT</button
+          ><br />
+          <p class="px-3 font-bold">Optimism Grant Quests</p>
+          <img
+            src="/build/img/carbon logo.webp"
+            alt=""
+            class="float-right h-28 w-28 rounded-full"
+          />
+          <div class="flex px-3 text-base font-light text-gray-300">
+            <p class="pt-1">Via Protocol</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-950 flex min-h-screen flex-col p-8">
+      <!-- <div class="flex justify-between align-baseline">
+            <h2 class="text-4xl font-extrabold">Trending</h2>
+            <button class="px-6 py-3 font-bold border border-gray-500 rounded-lg">View More</button>
+        </div> -->
+      <div class="mt-12 flex flex-col ">
+        <div class="flex justify-between align-baseline">
+          <h2 class="text-4xl font-extrabold">Trending</h2>
+          <button
+            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
+          >
+            View More
+          </button>
+        </div>
+        <div class="flex justify-between space-x-4">
+          <div
+            class="bg-gray-950 mt-5 flex w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <button
+              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
+            >
+              OAT
+            </button>
+            <div class="flex">
+              <div class="p-6">
+                <h2 class="mb-5 truncate text-xl font-bold">
+                  SPACE ID x Notifi AMA OAT
+                </h2>
+                <p class="mb-5 text-sm font-thin text-gray-300">
+                  8.10K participants
+                </p>
+                <p class="text-xl font-thin text-gray-300">
+                  <img
+                    src="/build/img/trend-1.webp"
+                    alt=""
+                    class="float-left mr-2 h-8 w-8"
+                  />
+                  SPACE ID <img src="" alt="" />
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <button
+              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
+            >
+              OAT
+            </button>
+            <div class="flex">
+              <div class="p-6">
+                <h2 class="mb-5 truncate text-xl font-bold">
+                  OpenEx x Hibiki Run
+                </h2>
+                <p class="mb-5 text-sm font-thin text-gray-300">
+                  4.34K participants
+                </p>
+                <p class="text-xl font-thin text-gray-300">
+                  <img
+                    src="/build/img/trend-2.webp"
+                    alt=""
+                    class="float-left mr-2 h-8 w-8"
+                  />
+                  OpenEx
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
+          >
+            <button
+              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
+            >
+              OAT
+            </button>
+            <div class="flex">
+              <div class="p-6">
+                <h2 class="mb-5 truncate text-xl font-bold">
+                  5 Yuli Mystery Boxes Up
+                </h2>
+                <p class="mb-5 text-sm font-thin text-gray-300">
+                  9.31K participants
+                </p>
+                <p class="text-xl font-thin text-gray-300">
+                  <img
+                    src="/build/img/trend-3.webp"
+                    alt=""
+                    class="float-left mr-2 h-8 w-8"
+                  />
+                  Yeehal Bingo
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
+          >
+            <button
+              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
+            >
+              OAT
+            </button>
+            <div class="flex">
+              <div class="p-6">
+                <h2 class="mb-5 truncate text-xl font-bold">300K Discord</h2>
+                <p class="mb-5 text-sm font-thin text-gray-300">
+                  1.73K participants
+                </p>
+                <p class="text-xl font-thin text-gray-300">
+                  <img
+                    src="/build/img/trend-4.webp"
+                    alt=""
+                    class="float-left mr-2 h-8 w-8"
+                  />
+                  Shardeum
+                </p>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
+        >
+          View More
+        </button>
+      </div>
+      <div class="mt-12 flex flex-col">
+        <div class="flex justify-between align-baseline">
+          <h2 class="text-4xl font-extrabold">Token Reward</h2>
+          <button
+            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
+          >
+            View More
+          </button>
+        </div>
+        <div class="flex justify-between space-x-4">
+          <div
+            class="mt-5 flex w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <h1 class="py-8 px-11 text-3xl font-bold">
+              <img
+                src="/build/img/USDT.png"
+                alt=""
+                class="float-left mr-3 h-10 w-10"
+              />25 USDT
+            </h1>
+            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
+            <p class="text-md px-11 py-4 font-medium">
+              <img
+                src="/build/img/token 1.webp"
+                alt=""
+                class="float-left mr-2 h-6 w-6 rounded-full"
+              />
+              Label Foundation
+            </p>
+            <p class="truncate px-11 py-4 text-lg font-bold">
+              CBT AIRDROP! Listen and Earn with Label Foundation
+            </p>
+          </div>
+          <div
+            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <h1 class="py-8 px-11 text-3xl font-bold">
+              <img
+                src="/build/img/USDT.png"
+                alt=""
+                class="float-left mr-3 h-10 w-10"
+              />25 USDT
+            </h1>
+            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
+            <p class="text-md px-11 py-4 font-medium">
+              <img
+                src="/build/img/token 2.webp"
+                alt=""
+                class="float-left mr-2 h-6 w-6 rounded-full"
+              />
+              ZeroSwap
+            </p>
+            <p class="truncate px-11 py-4 text-lg font-bold">
+              ZeroSwap x DZap Partnership
+            </p>
+          </div>
+          <div
+            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
+          >
+            <h1 class="py-8 px-11 text-3xl font-bold">
+              <img
+                src="/build/img/usdc-icon.e2362f6.png"
+                alt=""
+                class="float-left mr-3 h-10 w-10"
+              />20 USDC
+            </h1>
+            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
+            <p class="text-md px-11 py-4 font-medium">
+              <img
+                src="/build/img/token 3.webp"
+                alt=""
+                class="float-left mr-2 h-6 w-6 rounded-full"
+              />
+              RocketX
+            </p>
+            <p class="truncate px-11 py-4 text-lg font-bold">
+              ARTEMIS 3.0 | Mute.io <> RocketX
+            </p>
+          </div>
+          <div
+            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
+          >
+            <h1 class="py-8 px-11 text-3xl font-bold">
+              <img
+                src="/build/img/usdc-icon.e2362f6.png"
+                alt=""
+                class="float-left mr-3 h-10 w-10"
+              />10 USDC
+            </h1>
+            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
+            <p class="text-md px-11 py-4 font-medium">
+              <img
+                src="/build/img/Token 4.webp"
+                alt=""
+                class="float-left mr-2 h-6 w-6 rounded-full"
+              />
+              Reneverse
+            </p>
+            <p class="truncate px-11 py-4 text-lg font-bold">
+              Reneverse Launch
+            </p>
+          </div>
+        </div>
+        <button
+          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
+        >
+          View More
+        </button>
+      </div>
+      <div class="mt-12 mb-12 flex flex-col">
+        <div class="flex justify-between align-baseline">
+          <h2 class="text-4xl font-extrabold">Spaces</h2>
+          <button
+            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
+          >
+            View More
+          </button>
+        </div>
+        <div class="flex justify-between space-x-4">
+          <div
+            class="bg-gray-950 relative mt-5 flex w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <div
+              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
+            >
+              New
+            </div>
+            <div class="flex px-2 py-4">
+              <img
+                src="/build/img/Linea space.webp"
+                alt=""
+                class="mx-3 h-20 w-20 rounded-full"
+              />
+              <div class="flex w-4/5 flex-col">
+                <h2 class="mb-6 text-lg font-bold">Linea</h2>
+                <button
+                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
+                >
+                  1 campaign is active!
+                </button>
+              </div>
+            </div>
+            <div class="flex px-6 py-4">
+              <div class="flex w-1/5 flex-col items-center">
+                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
+                <img
+                  src="/build/img/token 1.webp"
+                  alt=""
+                  class="w-6 rounded-full"
+                />
+              </div>
+              <div class="ml-4 w-4/5">
+                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
+                <p class="text-sm text-white">Infrastructure, Layer 2</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
+          >
+            <div
+              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
+            >
+              New
+            </div>
+            <div class="flex px-2 py-4">
+              <img
+                src="/build/img/spaces-1.webp"
+                alt=""
+                class="mx-3 h-20 w-20"
+              />
+              <div class="flex w-4/5 flex-col">
+                <h2 class="mb-6 text-lg font-bold">Infinity Exchange</h2>
+                <button
+                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
+                >
+                  1 campaign is active!
+                </button>
+              </div>
+            </div>
+            <div class="flex px-6 py-4">
+              <div class="flex w-1/5 flex-col items-center">
+                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
+                <img
+                  src="/build/img/token 1.webp"
+                  alt=""
+                  class="w-6 rounded-full"
+                />
+              </div>
+              <div class="ml-4 w-4/5">
+                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
+                <p class="truncate text-sm text-white">
+                  DeFi, Dex, Staking, YieldFarming, Swapping
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
+          >
+            <div
+              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
+            >
+              New
+            </div>
+            <div class="flex px-2 py-4">
+              <img
+                src="/build/img/Aventis space.webp"
+                alt=""
+                class="mx-3 h-20 w-20 rounded-full"
+              />
+              <div class="flex w-4/5 flex-col">
+                <h2 class="mb-6 text-lg font-bold">Aventis Metaverse</h2>
+                <button
+                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
+                >
+                  1 campaign is active!
+                </button>
+              </div>
+            </div>
+            <div class="flex px-6 py-4">
+              <div class="flex w-1/5 flex-col items-center">
+                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
+                <img
+                  src="/build/img/token 1.webp"
+                  alt=""
+                  class="w-6 rounded-full"
+                />
+              </div>
+              <div class="ml-4 w-4/5">
+                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
+                <p class="truncate text-sm text-white">
+                  NFT, DAO, Play-To Earn, Metaverse world
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
+          >
+            <div
+              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
+            >
+              New
+            </div>
+            <div class="flex px-2 py-4">
+              <img
+                src="/build/img/zklink-logo2.webp"
+                alt=""
+                class="mx-3 h-20 w-20"
+              />
+              <div class="flex w-4/5 flex-col">
+                <h2 class="mb-6 text-lg font-bold">zkLink</h2>
+                <button
+                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
+                >
+                  1 campaign is active!
+                </button>
+              </div>
+            </div>
+            <div class="flex px-6 py-4">
+              <div class="flex w-1/5 flex-col items-center">
+                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
+                <img
+                  src="/build/img/token 1.webp"
+                  alt=""
+                  class="w-6 rounded-full"
+                />
+              </div>
+              <div class="ml-4 w-4/5">
+                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
+                <p class="truncate text-sm text-white">
+                  DeFi, NFT, Web3 Infrastructure, linkswap
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
+        >
+          View More
+        </button>
+      </div>
+    </section>
+    <section class="flex flex-col bg-black py-8 px-8 md:min-h-fit">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
+        <div class="col-span-2 mb-8 md:col-span-4 lg:col-span-3">
+          <h2 class="">
+            <a href=""
+              ><img src="img/new-logo.bc3e2ed.svg" alt="" class="mb-8"
+            /></a>
+          </h2>
+          <p class="mb-8 w-3/5 text-slate-200">
+            Galxe is the leading platform for building Web3 community. With over
+            30 million users, Galxe has propelled the growth of Optimism,
+            Polygon, Arbitrum, and more than 180 partners with reward-based
+            loyalty programs.
+          </p>
+          <button
+            class="rounded-lg border-2 border-blue-700 px-4 py-3 text-center text-lg font-bold text-blue-600"
+          >
+            Get the latest updates
+          </button>
+        </div>
+        <div class="">
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">GALXE</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Explore</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Spaces</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Credentials</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Galxe ID</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Solutions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">ABOUT</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Brand Kit</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Press Kit</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">COMMUNITY</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">SUPPORT</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Apply for Your Space</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="/build/js/style.js" defer></script>
+  </body>
+</html>
