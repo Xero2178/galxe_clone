@@ -10,11 +10,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body
-    class="flex min-h-screen flex-col to-black text-white overflow-x-hidden wallpaper">
+    class="flex min-h-screen flex-col text-white overflow-x-hidden" id="first">
     <header
-      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-lg"
+      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-xl"
     >
       <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
         <section class="flex flex-1 items-center justify-between">
@@ -25,7 +26,15 @@
               /></a>
             </li>
             <li class="hidden xl:block">
-              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600">Explore</a>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative" id="exploreSect1"><div class="flex"><div>Explore</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop1">
+                <a href="/build/index2.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Campaign</div></a>
+                
+                <a href="/build/index3.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">MintList</div></a>
+              </div>
+            </a>
             </li>
             <li class="hidden xl:block">
               <a href="" class="ease-in-out hover:text-blue-600">Spaces</a>
@@ -37,10 +46,84 @@
               <a href="" class="ease-in-out hover:text-blue-600">Solutions</a>
             </li>
             <li class="hidden xl:block">
-              <a href="" class="ease-in-out hover:text-blue-600">Galxe ID</a>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect2"><div class="flex"><div>Galxe ID</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop2">
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Profile</div></a>
+                
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">Passport</div></a>
+              </div>
+            </a>
             </li>
             <li class="hidden xl:block">
-              <a href="" class="ease-in-out hover:text-blue-600">More</a>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect3"><div class="flex"><div>More</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8" id="exploreDrop3">
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Brand Kit</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Press Kit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Instagram</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Help Center</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Apply for Your Space</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
             </li>
           </ul>
         </section>

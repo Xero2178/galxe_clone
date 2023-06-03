@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body
-    class="flex min-h-screen flex-col bg-slate-950 to-black text-white "
+    class="flex min-h-screen flex-col bg-slate-950 text-white"
   >
     <header
       class="sticky top-0 z-10 mb-3 bg-black text-white backdrop-blur-lg"
@@ -27,7 +27,15 @@
               /></a>
             </li>
             <li class="hidden xl:block">
-              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600">Explore</a>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative" id="exploreSect1"><div class="flex"><div>Explore</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop1">
+                <a href="/build/index2.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Campaign</div></a>
+                
+                <a href="/build/index3.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">MintList</div></a>
+              </div>
+            </a>
             </li>
             <li class="hidden xl:block">
               <a href="" class="ease-in-out hover:text-blue-600">Spaces</a>
@@ -39,12 +47,83 @@
               <a href="" class="ease-in-out hover:text-blue-600">Solutions</a>
             </li>
             <li class="hidden xl:block">
-              <a href="" class="ease-in-out hover:text-blue-600">Galxe ID</a>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect2"><div class="flex"><div>Galxe ID</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop2">
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Profile</div></a>
+                
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">Passport</div></a>
+              </div>
+            </a>
             </li>
             <li class="hidden xl:block">
-              <a href="" class="ease-in-out hover:text-blue-600">More</a>
-            </li>
-          </ul>
+              <a href="/build/index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect3"><div class="flex"><div>More</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8 z-30" id="exploreDrop3">
+                  <div>
+                    <ul class="space-y-2 text-slate-300">
+                      <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600"
+                          >Brand Kit</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600"
+                          >Press Kit</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="space-y-2 text-slate-300">
+                      <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600"
+                          >Instagram</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="space-y-2 text-slate-300">
+                      <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600"
+                          >Help Center</a
+                        >
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-slate-300 hover:text-blue-600"
+                          >Apply for Your Space</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+              </div>
         </section>
         <section class="flex justify-between gap-8">
           <a href="" class="hidden xl:block"
@@ -70,7 +149,7 @@
       </section>
       <section
         id="mobile-menu"
-        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-5xl"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-5xl z-30"
       >
         <!-- <button class="text-8xl self-end px-6">
                     &times;
@@ -100,136 +179,138 @@
     <main class="flex flex-col w-full py-4 px-6 sm:px-12 lg:px-20">
       <section class="flex justify-start items-center space-x-6 mb-4">
         <h1 class="text-white text-2xl font-bold md:text-3xl"><a href="/build/index2.html" class="focus:text-blue-600">Campaign</a></h1>
-        <h1 class="text-white text-2xl font-bold md:text-3xl"><a href="" class="focus:text-blue-600">MintList</a></h1>
+        <h1 class="text-white text-2xl font-bold md:text-3xl"><a href="/build/index3.html" class="focus:text-blue-600">MintList</a></h1>
       </section>
-      <section>
-        <hr class="bg-gray-900 opacity-10 mb-4">
-      </section>
-      <section class="flex justify-start items-center space-x-6 sticky md:hidden my-8">
-        <div class="bg-gray-900 flex items-center p-2 rounded-lg hover:border border-1 box-border">
-          <span class="material-symbols-outlined backdrop-opacity-50">
-            filter_list
-            </span>
-        </div>
-        <div class="bg-gray-900 flex items-center p-2 rounded-lg">
-          <span class="material-symbols-outlined backdrop-opacity-50">
-            search
-            </span>
-        </div>
-        <div class="flex">
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-2 px-4 rounded-l-lg">
-            <span class="material-symbols-outlined text-blue-700">
-              view_comfy_alt
+      <section class="w-full sticky top-16 bg-slate-950 z-10" id="stickyNav">
+        <section>
+          <hr class="bg-gray-900 opacity-10">
+        </section>
+        <section class="flex justify-start items-center space-x-6 sticky md:hidden my-3">
+          <div class="bg-gray-900 flex items-center p-2 rounded-lg hover:border border-1 box-border">
+            <span class="material-symbols-outlined backdrop-opacity-50">
+              filter_list
               </span>
           </div>
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-2 px-4 rounded-r-lg">
+          <div class="bg-gray-900 flex items-center p-2 rounded-lg">
+            <span class="material-symbols-outlined backdrop-opacity-50">
+              search
+              </span>
+          </div>
+          <div class="flex">
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-2 px-4 rounded-l-lg">
+              <span class="material-symbols-outlined text-blue-700">
+                view_comfy_alt
+                </span>
+            </div>
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-2 px-4 rounded-r-lg">
+              <span class="material-symbols-outlined">
+                view_comfy_alt
+                </span>
+            </div>
+          </div>
+          
+        </section>
+        <section class="justify-start items-center space-x-6 sticky hidden md:flex w-full lg:hidden my-3">
+          <div class="bg-gray-900 flex items-center px-5 py-2 rounded-lg text-center justify-center hover:border">
+            <span class="material-symbols-outlined backdrop-opacity-50 pr-4">
+              filter_list
+              </span>
+              <span class="text-2xl font-bold">   Trending</span>
+          </div>
+          <div class="bg-gray-900 flex items-center rounded-lg flex-1">
+            <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
+          </div>
+          <div class="flex">
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
+              <span class="material-symbols-outlined text-blue-700">
+                view_comfy_alt
+                </span>
+            </div>
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
+              <span class="material-symbols-outlined">
+                view_comfy_alt
+                </span>
+            </div>
+          </div>
+          
+        </section>
+        <section class="justify-start items-center space-x-6 my-3 sticky hidden lg:flex w-full xl:hidden">
+          <div class="bg-gray-900 flex items-center px-6 py-3 rounded-lg text-center justify-center hover:border">
+            <span class="material-symbols-outlined pr-2">
+              page_info
+              </span>
+              <span class="text-md font-bold">Show Filters</span>
+          </div>
+          <div class="bg-gray-900 flex items-center rounded-lg flex-1">
+            <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
+          </div>
+          <div class="bg-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center">
+            <span class="material-symbols-outlined backdrop-opacity-50 pr-1">
+              filter_list
+              </span>
+              <span class="text-lg font-bold">   Trending</span>
+          </div>
+          <div class="bg-transparent border-2 border-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
             <span class="material-symbols-outlined">
-              view_comfy_alt
+              check_circle
               </span>
           </div>
-        </div>
-        
-      </section>
-      <section class="justify-start items-center space-x-6 sticky hidden md:flex w-full lg:hidden my-8">
-        <div class="bg-gray-900 flex items-center px-5 py-2 rounded-lg text-center justify-center hover:border">
-          <span class="material-symbols-outlined backdrop-opacity-50 pr-4">
-            filter_list
-            </span>
-            <span class="text-2xl font-bold">   Trending</span>
-        </div>
-        <div class="bg-gray-900 flex items-center rounded-lg flex-1">
-          <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
-        </div>
-        <div class="flex">
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
-            <span class="material-symbols-outlined text-blue-700">
-              view_comfy_alt
-              </span>
+          <div class="flex">
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
+              <span class="material-symbols-outlined text-blue-700">
+                view_comfy_alt
+                </span>
+            </div>
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
+              <span class="material-symbols-outlined">
+                view_comfy_alt
+                </span>
+            </div>
           </div>
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
-            <span class="material-symbols-outlined">
-              view_comfy_alt
+          
+        </section>
+        <section class="justify-start items-center space-x-6 my-3 hidden xl:flex w-full">
+          <div class="bg-gray-900 flex items-center px-6 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
+            <span class="material-symbols-outlined pr-2">
+              page_info
               </span>
+              <span class="text-md font-bold">Show Filters</span>
           </div>
-        </div>
-        
-      </section>
-      <section class="justify-start items-center space-x-6 my-8 sticky hidden lg:flex w-full xl:hidden">
-        <div class="bg-gray-900 flex items-center px-6 py-3 rounded-lg text-center justify-center hover:border">
-          <span class="material-symbols-outlined pr-2">
-            page_info
-            </span>
-            <span class="text-md font-bold">Show Filters</span>
-        </div>
-        <div class="bg-gray-900 flex items-center rounded-lg flex-1">
-          <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
-        </div>
-        <div class="bg-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center">
-          <span class="material-symbols-outlined backdrop-opacity-50 pr-1">
-            filter_list
-            </span>
-            <span class="text-lg font-bold">   Trending</span>
-        </div>
-        <div class="bg-transparent border-2 border-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
-          <span class="material-symbols-outlined">
-            check_circle
-            </span>
-        </div>
-        <div class="flex">
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
-            <span class="material-symbols-outlined text-blue-700">
-              view_comfy_alt
+          <div class="bg-gray-900 flex items-center rounded-lg flex-1">
+            <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
+          </div>
+          <div class="bg-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center">
+            <span class="material-symbols-outlined backdrop-opacity-50 pr-1">
+              filter_list
               </span>
+              <span class="text-lg font-bold">   Trending</span>
           </div>
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
-            <span class="material-symbols-outlined">
-              view_comfy_alt
+          <div class="bg-transparent border-2 border-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
+            <span class="material-symbols-outlined pr-1">
+              check_circle
               </span>
+              <span class="text-lg font-bold">Available to claim</span>
           </div>
-        </div>
-        
-      </section>
-      <section class="justify-start items-center space-x-6 my-8 sticky hidden xl:flex w-full">
-        <div class="bg-gray-900 flex items-center px-6 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
-          <span class="material-symbols-outlined pr-2">
-            page_info
-            </span>
-            <span class="text-md font-bold">Show Filters</span>
-        </div>
-        <div class="bg-gray-900 flex items-center rounded-lg flex-1">
-          <input type="search" name="" id="" class="bg-transparent py-3 w-full outline-none px-4" placeholder="&#128269; Search">
-        </div>
-        <div class="bg-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center">
-          <span class="material-symbols-outlined backdrop-opacity-50 pr-1">
-            filter_list
-            </span>
-            <span class="text-lg font-bold">   Trending</span>
-        </div>
-        <div class="bg-transparent border-2 border-gray-900 flex items-center px-5 py-3 rounded-lg text-center justify-center hover:border hover:border-white">
-          <span class="material-symbols-outlined pr-1">
-            check_circle
-            </span>
-            <span class="text-lg font-bold">Available to claim</span>
-        </div>
-        <div class="flex">
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
-            <span class="material-symbols-outlined text-blue-700">
-              view_comfy_alt
-              </span>
+          <div class="flex">
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-l-lg">
+              <span class="material-symbols-outlined text-blue-700">
+                view_comfy_alt
+                </span>
+            </div>
+            <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
+              <span class="material-symbols-outlined">
+                view_comfy_alt
+                </span>
+            </div>
           </div>
-          <div class="bg-transparent border-2 border-gray-900 flex items-center py-3 px-4 rounded-r-lg">
-            <span class="material-symbols-outlined">
-              view_comfy_alt
-              </span>
-          </div>
-        </div>
-        
+          
+        </section>
       </section>
       <section class="flex items-center box-border w-full">
         <section class="grid grid-cols-2 gap-4 lg:grid-cols-3 flex-wrap justify-between w-full overflow-hidden xl:grid-cols-4">
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 9.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
+            <div class="mb-2">
               <marquee behavior="" direction="">
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
                   Points
@@ -239,41 +320,53 @@
                 </button>
               </marquee>
             </div>
-            <h1 class="font-bold px-4 mb-12">Linea Voyage</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Linea</p>
+            <h1 class="font-bold px-4 mb-6">Linea Voyage</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 1.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            /> Linea</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 8.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   NFT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12">Orbiter Pilots NFT</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Orbiter Finance</p>
+            <h1 class="font-bold px-4 mb-6">Orbiter Pilots NFT</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 2.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            /> Orbiter Finance</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 7.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   OAT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">Altlayer Altitude Phase 1: Multimedia </h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Linea</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Altlayer Altitude Phase 1: Multimedia </h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 3.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            /> Linea</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 10.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full">
-            <div>
+            <div class="mb-2">
               <marquee behavior="" direction="">
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
                   Points
@@ -283,122 +376,158 @@
                 </button>
               </marquee>
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">zkBridge Loyalty Program</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6 truncate">Polyhedra Newton</p>
+            <h1 class="font-bold px-4 mb-6 truncate">zkBridge Loyalty Program</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3 truncate"><img
+              src="/build/img/token 4.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Polyhedra Newton</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 6.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   OAT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12">Omni Origins</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Omni Network</p>
+            <h1 class="font-bold px-4 mb-6">Omni Origins</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 1.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Omni Network</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 1.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   NFT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">Dew the Dew Name with Polygon</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Polygon</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Dew the Dew Name with Polygon</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 2.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Polygon</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 2.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4 ml-4">
                   OAT
                 </button>
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm">
                   NFT
                 </button>
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12">Mission Bring ZETA Home</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">ZetaChain</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Mission Bring ZETA Home</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/zetachain.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />ZetaChain</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 3.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   OAT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">Manta Network Universe zkSBYIL</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6 truncate">Manta Network</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Manta Network Universe zkSBYIL</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3 truncate"><img
+              src="/build/img/token 4.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Manta Network</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 4.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   OAT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">Manta Network Linea zkProfile</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Linea</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Manta Network Linea zkProfile</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 1.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Linea</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 5.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   OAT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">Manta Network BNB Chain Projects Adopt</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Manta Network</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Manta Network BNB Chain Projects Adopt</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 2.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Manta Network</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 11.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   Points
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12">Opside Pre-alpha Testnet Carnival</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Opside</p>
+            <h1 class="font-bold px-4 mb-6 truncate">Opside Pre-alpha Testnet Carnival</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 3.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Opside</p>
 
           </div>
-          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500">
+          <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
             <img src="/build/img/Campaign 12.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
-            <div>
-              <marquee behavior="" direction="">
-                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
+            <div class="mb-2">
+              
+                <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
                   NFT
                 </button>
                 
-              </marquee>
+              
             </div>
-            <h1 class="font-bold px-4 mb-12 truncate">zetaChain X Symbiosis Official</h1>
-            <p class="px-4 text-slate-200 font-thin text-md mb-6">Symbiosis</p>
+            <h1 class="font-bold px-4 mb-6 truncate">ZetaChain X Symbiosis Official</h1>
+            <p class="px-4 text-slate-200 font-thin text-md mb-3"><img
+              src="/build/img/token 4.webp"
+              alt=""
+              class="w-6 rounded-full float-left mr-2"
+            />Symbiosis</p>
 
           </div>
           

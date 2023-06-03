@@ -11,8 +11,9 @@
         @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
     }
 }
-.wallpaper{
+body#first{
     background-image: url('/build/img/wallpaper.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    filter: blur(0.7);
 }
