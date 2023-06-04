@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="a" x1="14.645%" x2="85.361%" y1="85.363%" y2="14.647%">
+      <stop offset="0%" stop-color="#102054"/>
+      <stop offset="100%" stop-color="#1A45B8"/>
+    </linearGradient>
+    <linearGradient id="b" x1="50.012%" x2="50.012%" y1="-.297%" y2="101.067%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="c" x1="50.025%" x2="50.025%" y1="100.361%" y2=".884%">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#FFF" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="none">
+    <circle cx="49.587" cy="49.569" r="49.569" fill="url(#a)"/>
+    <path fill="url(#b)" d="M49.587 19.596v.028l.01 19.615 3.55 8.871-3.541-2.954v9.468c.018.027.036.046.055.073a67.876 67.876 0 0 0 20.945 17.45l-21.019-52.55z"/>
+    <path fill="url(#c)" d="M49.587 19.596v.028l-.009 19.615-3.55 8.871 3.54-2.954v9.468c-.018.027-.036.046-.054.073a67.876 67.876 0 0 1-20.945 17.45l21.018-52.55z"/>
+    <circle cx="49.587" cy="61.881" r="4.771" fill="#F5CC02"/>
+  </g>
+</svg>
