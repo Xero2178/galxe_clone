@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body
-    class="flex min-h-screen flex-col text-white overflow-x-hidden" id="first">
+    class="flex min-h-screen flex-col text-white overflow-x-hidden w-full border" id="first">
     <header
-      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-xl"
+      class="sticky top-0 z-20 mb-8 bg-transparent text-white backdrop-blur-xl" id="headerNav"
     >
       <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
         <section class="flex flex-1 items-center justify-between">
@@ -151,30 +151,53 @@
       </section>
       <section
         id="mobile-menu"
-        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-5xl"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black to-slate-900 text-5xl px-6 backdrop-blur-lg"
       >
         <!-- <button class="text-8xl self-end px-6">
                     &times;
                 </button> -->
 
         <nav
-          class="flex min-h-screen flex-col items-center py-8"
+          class="flex min-h-screen flex-col py-8 text-xl text-left font-bold"
           aria-label="mobile"
         >
-          <a href="/build/index2.html" class="w-full py-6 text-center hover:opacity-90"
+          <div class="py-6 flex items-center border-b border-gray-700" >
+            <a href="/build/index2.html" class="w-full hover:opacity-90" id="dropDown1"
             >Explore</a
           >
-          <a href="/build/index4.html" class="w-full py-6 text-center hover:opacity-90">Spaces</a>
-          <a href="" class="w-full py-6 text-center hover:opacity-90"
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+
+            
+          </div>
+          <div class="w-full flex-col hidden" id="dropUp1">
+            <a href="/build/index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Campaign</a>
+          <a href="/build/index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4">MintList</a>
+          <a href="/build/index5.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700">Following</a>
+          </div>
+          
+          <a href="/build/index4.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700">Spaces</a>
+          <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
             >Credentials</a
           >
-          <a href="" class="w-full py-6 text-center hover:opacity-90"
+          <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
             >Solutions</a
           >
-          <a href="" class="w-full py-6 text-center hover:opacity-90"
+          <div class="py-6 flex items-center border-b border-gray-700">
+            <a href="" class="w-full hover:opacity-90"
             >Galxe ID</a
           >
-          <a href="" class="w-full py-6 text-center hover:opacity-90">More</a>
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+          </div>
+          <div class="py-6 flex items-center">
+            <a href="" class="w-full hover:opacity-90"
+            >More</a
+          >
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+          </div>
+          <button class="rounded-lg text-center bg-blue-600 text-xl text-white w-full py-3 mt-16">Connect Wallet</button>
         </nav>
       </section>
     </header>

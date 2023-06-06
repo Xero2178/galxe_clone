@@ -23,13 +23,18 @@
 const initApp = () => {
     const hamburgerBtn = document.querySelector('#hamburger-button');
     const mobileMenu = document.querySelector('#mobile-menu');
-    const stickyNav = document.querySelector('#stickyNav')
+    const stickyNav = document.getElementById('stickyNav');
+    const body = document.querySelector('#first');
+    
+    
 
-    const toggleMenu = () => {
+    const toggleMenu = () => {        
         mobileMenu.classList.toggle('hidden');
         mobileMenu.classList.toggle('flex');
-        hamburgerBtn.classList.toggle('toggle-btn')
-        stickyNav.classList.toggle('z-10')
+        hamburgerBtn.classList.toggle('toggle-btn');   
+        body.classList.toggle('overflow-y-hidden');
+        
+        
     }
 
     mobileMenu.addEventListener('click', toggleMenu)
@@ -37,8 +42,15 @@ const initApp = () => {
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
-const exploreSect1 = document.getElementById('exploreSect1')
-const exploreDrop1 = document.getElementById('exploreDrop1')
+const exploreSect1 = document.getElementById('exploreSect1');
+const exploreDrop1 = document.getElementById('exploreDrop1');
+const stickyNav = document.querySelector('#stickyNav');
+const mobileMenu = document.querySelector('#mobile-menu');
+const hamburgerBtn = document.querySelector('#hamburger-button');
+
+hamburgerBtn.addEventListener('click', function(){
+    stickyNav.classList.toggle('z-10') 
+})
 
 
 exploreSect1.addEventListener('mouseover', function(){
@@ -81,6 +93,9 @@ const exploreSect3 = document.getElementById('exploreSect3')
 const exploreDrop3 = document.getElementById('exploreDrop3')
 
 
+
+
+
 exploreSect3.addEventListener('mouseover', function(){
     exploreDrop3.classList.remove('hidden')
     exploreDrop3.classList.add('flex')
@@ -102,4 +117,11 @@ exploreDrop3.addEventListener('mouseout', function(){
     exploreDrop3.classList.add('hidden')
     exploreDrop3.classList.remove('flex')
     stickyNav.classList.add('z-10')
+})
+const dropDown1 = document.getElementById('dropDown1');
+const dropUp1 = document.getElementById('dropUp1');
+
+dropDown1.addEventListener('click', function(){
+    dropUp1.classList.toggle('hidden');
+    dropUp1.classList.toggle('flex')
 })
