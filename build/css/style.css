@@ -1569,7 +1569,7 @@ video {
 }
 
 body#first{
-  background-image: url('./img/wallpaper.jpg');
+  background-image: url('../img/wallpaper.jpg');
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   filter: blur(0.7);
