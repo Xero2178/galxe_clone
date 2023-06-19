@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALXE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body
+    class="flex min-h-screen flex-col text-white overflow-x-hidden w-full bg-black" >
+    <header
+      class="sticky top-0 z-20 mb-8 bg-transparent text-white backdrop-blur-xl" id="headerNav"
+    >
+      <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
+        <section class="flex flex-1 items-center justify-between">
+          <ul class="flex space-x-8 align-baseline text-lg">
+            <li>
+              <a href="./index.html"
+                ><img src="./img/new-logo.bc3e2ed.svg" alt="" width="100%"
+              /></a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative" id="exploreSect1"><div class="flex"><div>Explore</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop1">
+                <a href="./index2.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Campaign</div></a>
+                
+                <a href="./index3.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">MintList</div></a>
+              </div>
+            </a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="./index4.html" class="ease-in-out hover:text-blue-600">Spaces</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="./index5.html" class="ease-in-out hover:text-blue-600">Credentials</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="" class="ease-in-out hover:text-blue-600">Solutions</a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect2"><div class="flex"><div>Galxe ID</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop2">
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Profile</div></a>
+                
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">Passport</div></a>
+              </div>
+            </a>
+            </li>
+            <li class="hidden xl:block">
+              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect3"><div class="flex"><div>More</div><div class="material-symbols-outlined pt-1 pl-1">
+                arrow_drop_down
+              </div></div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8" id="exploreDrop3">
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Brand Kit</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Press Kit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Instagram</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Help Center</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Apply for Your Space</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            </li>
+          </ul>
+        </section>
+        <section class="flex justify-between gap-8">
+          <a href="" class="hidden xl:block"
+            ><button class="rounded-2xl bg-blue-600 px-4 py-2 font-medium">
+              2-years Anniversary Celebration
+            </button></a
+          >
+          <a href="" class="hidden xl:block"
+            ><button class="rounded-2xl px-3 py-2 font-medium border">
+              Connect Wallet
+            </button></a
+          >
+
+          <button
+            class="relative block h-8 w-8 cursor-pointer text-3xl xl:hidden"
+            id="hamburger-button"
+          >
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+        </section>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl px-6 backdrop-blur-lg overflow-y-scroll"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                    &times;
+                </button> -->
+
+        <nav
+          class="flex min-h-screen flex-col py-8 text-xl text-left font-bold "
+          aria-label="mobile"
+        >
+          <div class="py-6 flex items-center border-b border-gray-700" id="mainDrop1">
+            <div class="w-full hover:opacity-90" id="dropDown1"
+            ><span class=""><a href="./index2.html">Explore</a></span></div
+          >
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+
+            
+          </div>
+          <div class="w-full flex-col hidden" id="dropUp1">
+            <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Campaign</a>
+          <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4">MintList</a>
+          <a href="./index5.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700">Following</a>
+          </div>
+          
+          <a href="./index4.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700">Spaces</a>
+          <a href="./index5.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
+            >Credentials</a
+          >
+          <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
+            >Solutions</a
+          >
+          <div class="py-6 flex items-center border-b border-gray-700" id="mainDrop2">
+            <div class="w-full hover:opacity-90" id="dropDown2"
+            ><span class=""><a href="./index2.html">Galxe ID</a></span></div
+          >
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+
+            
+          </div>
+          <div class="w-full flex-col hidden" id="dropUp2">
+            <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Profile</a>
+          <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700">Passport</a>
+          </div>
+          
+          <div class="py-6 flex items-center">
+            <a href="" class="w-full hover:opacity-90"
+            >More</a
+          >
+          <div class="material-symbols-outlined pt-1 pl-1 float-right">
+            arrow_drop_down</div>
+          </div>
+          <div class="flex-col w-full hidden">
+            <div class="w-full flex-col">
+              <ul class="space-y-2 text-slate-300">
+                <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600"
+                    >Brand Kit</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600"
+                    >Press Kit</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-2 text-slate-300">
+                <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="space-y-2 text-slate-300">
+                <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+                </li>
+                <li>
+                  <a href="" class="text-slate-300 hover:text-blue-600"
+                    >Apply for Your Space</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="rounded-lg text-center bg-blue-600 text-xl text-white w-full py-3 mt-16">Connect Wallet</button>
+        </nav>
+      </section>
+    </header>
+    <main class="mx-5 text-center">
+      <section class="flex flex-col justify-center items-center">
+        <h1
+        class="w-10/12 mb-2 max-w-7xl text-center text-4xl font-extrabold md:text-4xl lg:mx-auto lg:text-5xl xl:text-6xl leading-normal"
+      >
+        A Leading Collaborative Credential Data Network
+        
+      </h1>
+      <p class="w-10/12 font-semibold mb-5">Credentials are records of activities, reputation and accomplishments that make up your digital identity</p>
+
+      <div class="flex justify-between w-11/12 mb-5 space-x-3 max-w-xl">
+        <button class="px-8 py-4 text-lg font-bold rounded-tr-2xl bg-blue-600 rounded-bl-2xl rounded-tl-md rounded-br-md w-full">Build Now</button>
+      <button class="px-8 py-4 text-lg font-bold rounded-tr-2xl bg-transparent rounded-bl-2xl rounded-tl-md rounded-br-md border-2 w-full hover:border-blue-600 hover:text-blue-600">Credential API</button>
+      </div>
+      <div class="bg-blue-400 bg-opacity-20 rounded-md w-10/12 font-semibold max-w-2xl flex flex-col lg:flex-row lg:justify-around lg:items-center pb-4 my-8">
+        <div>
+          <p class="py-5">Total Curated Credentials</p>
+        <p class="text-2xl font-bold text-blue-600">52370</p>
+        </div>
+        <div>
+          <p class="py-5">Leverage Galxe Credentials to</p>
+        <p class="text-2xl font-bold text-blue-600">Locate Target Audiences</p>
+        </div>
+      </div>
+
+      <section class="flex flex-col max-w-7xl mt-10 relative">
+        <div class="flex flex-col lg:flex-row justify-between lg:items-center mb-4 sticky top-2 bg-black z-10 lg:top-16 pt-6 bg-opacity-50 backdrop-blur-2xl">
+          <h1 class="text-2xl font-bold text-left mb-5">All Credentials</h1>
+        <input type="search" name="" id="" class="bg-slate-900 bg-opacity-70 rounded-xl py-3 px-4 mb-4 w-full md:w-3/5" placeholder="&#128269 Search Credentials">
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 lg:grid-cols-3 xl:grid-cols-4">
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 ">
+            <h1 class="font-bold text-base text-left mb-6">Shadowy Super Coder</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Developers who 1). deployed at least 1 contract on Ethereum mainnet before August 1st, 2021 2). had deployed contracts
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Valentines Day winners</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Fill out the form and invite your "valentine" to join SynFutures discord, Both of you trade over $500 during event period. Winners will be rewarded with WhiteList
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">SynFutures</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Kaco 2021 Christmas kac-kkac LP Stakers</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Users who staked 200 Kac-Kkac LP token on KACO's farm on Kaco from Dec 22nd, 2021 to Jan 2nd, 2022 16:00 UTC +8
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">KACO Finance</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">$CHEERS Holder 24</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              All users who hold more than 3000 $CHEERS tokens during the campaign event, 10:00 AM 21/12/2021-10:00 AM 02/02/2023 will be rewarded with 10000 $CHEERS each
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">CheersLand</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">MVB VOTING Committee</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Community Champ - Industry influencers who know the blockchain ecosystem well and help expand the MVB Program
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">BNB Chain</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Kleoverse Fren OAT Giveaway Participants</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Kleoverse is the DAO Working Platform, helping you to earn with projects to prove your talent! To celebrate the first Kleoverse token to be launched
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Kleoverse</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Bonafida Wolf 2022</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Bonafida wolves who have registered for a new .sol domain name on https://naming.bonafida.org/#/ from February 11, 2o22
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>SOLANA_ADDRESS</h1>
+                <h1 class="opacity-90">Bonafida</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Immortal Cat WL giveaways</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              It's a Metaverse Dao Composed of Immortal Cat NFT Holders. Immortal Cat will have breeding game, ETH message Card
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">Guild W Chainmonsters AMA</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col p-4 bg-blue-400 bg-opacity-20 rounded-lg hover:scale-105 transition-all ease-in-out duration-300 gap-4">
+            <h1 class="font-bold text-base text-left mb-6">April 2021 ALPACA Staker</h1>
+            <p class="text-sm text-left line-clamp-2 mb-4">
+              Addresses have at least the shown sALPACA amount staked on the Stake page during the snapshot on April 14th
+            </p>
+            <hr class="bg-gray-900 opacity-10">
+            <div class="flex justify-between items-center mt-4 mb-1 text-sm">
+              <div  class="text-left">
+                <h1 class="opacity-50">Type</h1>
+                <h1 class="opacity-50">Curated by</h1>
+              </div>
+              <div  class="text-right">
+                <h1>EVM_ADDRESS</h1>
+                <h1 class="opacity-90">Galxe</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      
+      
+    </main>
+    
+    <section class="flex flex-col bg-black py-8 px-8 md:min-h-fit">
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
+        <div class="col-span-2 mb-8 md:col-span-4 lg:col-span-3">
+          <h2 class="">
+            <a href=""
+              ><img src="./img/new-logo.bc3e2ed.svg" alt="" class="mb-8"
+            /></a>
+          </h2>
+          <p class="mb-8 w-3/5 text-slate-200">
+            Galxe is the leading platform for building Web3 community. With over
+            30 million users, Galxe has propelled the growth of Optimism,
+            Polygon, Arbitrum, and more than 180 partners with reward-based
+            loyalty programs.
+          </p>
+          <button
+            class="rounded-lg border-2 border-blue-700 px-4 py-3 text-center text-lg font-bold text-blue-600"
+          >
+            Get the latest updates
+          </button>
+        </div>
+        <div class="">
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">GALXE</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Explore</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Spaces</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Credentials</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Galxe ID</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Solutions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">ABOUT</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Brand Kit</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Press Kit</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">COMMUNITY</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-slate-300">
+            <li class="mb-2 text-xl font-semibold text-white">SUPPORT</li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+            </li>
+            <li>
+              <a href="" class="text-slate-300 hover:text-blue-600"
+                >Apply for Your Space</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/style.js" defer></script>
+  </body>
+</html>

@@ -27,6 +27,7 @@ const initApp = () => {
     const body = document.querySelector('#first');
     
     
+    
 
     const toggleMenu = () => {        
         mobileMenu.classList.toggle('hidden');
@@ -42,6 +43,7 @@ const initApp = () => {
 }
 
 document.addEventListener('DOMContentLoaded', initApp)
+
 const exploreSect1 = document.getElementById('exploreSect1');
 const exploreDrop1 = document.getElementById('exploreDrop1');
 const stickyNav = document.querySelector('#stickyNav');
@@ -118,10 +120,20 @@ exploreDrop3.addEventListener('mouseout', function(){
     exploreDrop3.classList.remove('flex')
     stickyNav.classList.add('z-10')
 })
-const dropDown1 = document.getElementById('dropDown1');
-const dropUp1 = document.getElementById('dropUp1');
+    const dropDown1 = document.getElementById('dropDown1');
+    const dropUp1 = document.getElementById('dropUp1');
+    const mainDrop1 = document.getElementById('mainDrop1');
+    const dropDown2 = document.getElementById('dropDown2');
+    const dropUp2 = document.getElementById('dropUp2');
+    const mainDrop2 = document.getElementById('mainDrop2');
 
-dropDown1.addEventListener('click', function(){
+    dropDown1.addEventListener('click', function(){
     dropUp1.classList.toggle('hidden');
     dropUp1.classList.toggle('flex')
+    mainDrop1.classList.toggle('border-b')
+})
+    dropDown2.addEventListener('click', function(){
+    dropUp2.classList.toggle('hidden');
+    dropUp2.classList.toggle('flex')
+    mainDrop2.classList.toggle('border-b')
 })
