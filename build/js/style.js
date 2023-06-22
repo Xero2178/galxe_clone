@@ -20,7 +20,8 @@
 //     leftButton.classList.add('bg-transparent');
 // })
 
-const initApp = () => {
+const initApp = (e) => {
+    
     const hamburgerBtn = document.querySelector('#hamburger-button');
     const mobileMenu = document.querySelector('#mobile-menu');
     const stickyNav = document.getElementById('stickyNav');
@@ -38,7 +39,7 @@ const initApp = () => {
         
     }
 
-    mobileMenu.addEventListener('click', toggleMenu)
+    // mobileMenu.addEventListener('click', toggleMenu)
     hamburgerBtn.addEventListener('click', toggleMenu)
 }
 
@@ -127,12 +128,14 @@ exploreDrop3.addEventListener('mouseout', function(){
     const dropUp2 = document.getElementById('dropUp2');
     const mainDrop2 = document.getElementById('mainDrop2');
 
-    dropDown1.addEventListener('click', function(){
+    mainDrop1.addEventListener('click', function(){
+    
     dropUp1.classList.toggle('hidden');
     dropUp1.classList.toggle('flex')
     mainDrop1.classList.toggle('border-b')
 })
-    dropDown2.addEventListener('click', function(){
+    mainDrop2.addEventListener('click', function(){
+    
     dropUp2.classList.toggle('hidden');
     dropUp2.classList.toggle('flex')
     mainDrop2.classList.toggle('border-b')
