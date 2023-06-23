@@ -20,6 +20,7 @@
 //     leftButton.classList.add('bg-transparent');
 // })
 
+
 const initApp = (e) => {
     
     const hamburgerBtn = document.querySelector('#hamburger-button');
@@ -140,3 +141,96 @@ exploreDrop3.addEventListener('mouseout', function(){
     dropUp2.classList.toggle('flex')
     mainDrop2.classList.toggle('border-b')
 })
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  autoplay: {
+      delay: 6000,
+      speed: 500
+  },
+  loop: true,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  // pagination: {
+  //     el: ".swiper-pagination",
+  //     clickable: true,
+  //     dynamicBullets: 'true',
+  // },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+
+
+  breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
+      600: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
+
+{/* <section
+        class="mx-auto flex max-w-full items-center justify-center"
+      >
+        <div class="relative w-full border">
+          <div class="flex">
+            <div class="lfloat absolute h-80 w-1/2"></div>
+            <div class="rfloat absolute left-1/2 h-80 w-1/2"></div>
+          </div>
+          <div
+            class="lbutton absolute top-1/3 h-16 w-16 rounded-full bg-transparent"
+          ></div>
+          <div
+            class="rbutton absolute top-1/3 left-[96%] h-16 w-16 rounded-full bg-transparent"
+          ></div>
+          <div class="mx-0 flex space-x-4 md:mx-8 xl:space-x-8 border">
+            <div class="md:w-88 mb-9 w-full xl:w-full border">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/rubic icon.webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  Swap to Earn: The Innovative Way
+                </p>
+              </div>
+            </div>
+            <div class="md:w-88 hidden w-full lg:block xl:w-full">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/1678799057122-Frame 1171274652.webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">Galxe</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  Galxe Community Missions- Season 2
+                </p>
+              </div>
+            </div>
+            <div class="md:w-88 hidden w-full md:block xl:w-full">
+              <div class="bg-gray-950 rounded-2xl border border-gray-700 p-3">
+                <img
+                  src="./img/1679625102518-image (3).webp"
+                  alt=""
+                  class="h-72 w-full rounded-t-2xl object-cover md:h-52 lg:h-40 xl:h-60"
+                />
+                <h2 class="mt-2 text-left text-2xl font-thin">SPACE ID</h2>
+                <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
+                  SPACE ID Voyage season-2 Calling
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}

@@ -678,6 +678,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -752,10 +756,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .box-border {
@@ -844,33 +844,12 @@ video {
   height: 20rem;
 }
 
-.h-56 {
-  height: 14rem;
+.h-\[50\%\] {
+  height: 50%;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
+.h-\[70\%\] {
+  height: 70%;
 }
 
 .max-h-screen {
@@ -956,6 +935,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-fit {
@@ -1063,6 +1046,14 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
@@ -1445,6 +1436,11 @@ video {
   padding-right: 2rem;
 }
 
+.px-\[14px\] {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1478,6 +1474,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pb-4 {
