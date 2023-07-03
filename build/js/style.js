@@ -26,7 +26,8 @@ const initApp = (e) => {
     const hamburgerBtn = document.querySelector('#hamburger-button');
     const mobileMenu = document.querySelector('#mobile-menu');
     const stickyNav = document.getElementById('stickyNav');
-    const body = document.querySelector('#first');
+    const body = document.querySelector('body');
+    const credentials = document.querySelector('#credentials')
     
     
     
@@ -36,7 +37,7 @@ const initApp = (e) => {
         mobileMenu.classList.toggle('flex');
         hamburgerBtn.classList.toggle('toggle-btn');   
         body.classList.toggle('overflow-y-hidden');
-        
+        credentials.classList.toggle('z-[7]')
         
     }
 
@@ -142,6 +143,155 @@ exploreDrop3.addEventListener('mouseout', function(){
     mainDrop2.classList.toggle('border-b')
 })
 
+
+  const connectBtn1 = document.getElementById('connectBtn1')
+const connectBtn2 = document.getElementById('connectBtn2')
+const connectBtn3 = document.getElementById('connectBtn3')
+const connectBtn4 = document.getElementById('connectBtn4')
+const connectBtn5 = document.getElementById('connectBtn5')
+const connectBtn6 = document.getElementById('connectBtn6')
+const connectBtn7 = document.getElementById('connectBtn7')
+
+
+const connectWallet = document.getElementById("connectWallet")
+const opaqueBody = document.querySelector('#opaqueBody')
+const times = document.getElementById('times')
+const walletCon = document.getElementById('walletCon')
+const body = document.querySelector('#first');
+
+connectBtn1.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  body.classList.toggle('overflow-y-hidden')
+ 
+})
+connectBtn2.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  body.classList.toggle('overflow-y-hidden')
+ 
+})
+connectBtn3.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  body.classList.toggle('overflow-y-hidden')
+ 
+})
+connectBtn4.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  body.classList.add('overflow-y-hidden')
+ 
+})
+connectBtn5.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  body.classList.add('overflow-y-hidden')
+ 
+})
+connectBtn6.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  
+  body.classList.add('overflow-y-hidden')
+ 
+})
+connectBtn7.addEventListener("click", function(){
+  console.log('uwvycilry')
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  if(walletCon.classList.contains('flex')){
+    walletCon.classList.remove('flex')
+    walletCon.classList.add('hidden')
+  }else{
+    walletCon.classList.add('flex')
+    walletCon.classList.remove('hidden')
+  }
+  if(!body.classList.contains('overflow-y-hidden')){
+    body.classList.add('overflow-y-hidden')
+  }
+
+  
+ 
+})
+
+
+times.addEventListener('click', function(){
+  connectWallet.classList.toggle('hidden')
+  opaqueBody.classList.toggle('hidden')
+  times.classList.toggle('hidden')
+  
+  if(walletCon.classList.contains('hidden')){
+    walletCon.classList.remove('hidden')
+    walletCon.classList.add('flex')
+  }else{
+    walletCon.classList.add('hidden')
+    walletCon.classList.remove('flex')
+  }
+    if(mobileMenu.classList.contains('hidden')){
+      body.classList.remove('overflow-y-hidden')
+    }else{
+      body.classList.add('overflow-y-hidden')
+    }
+})
+
+
+
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
@@ -176,6 +326,7 @@ var swiper = new Swiper(".slide-content", {
       },
   },
 });
+console.log("Bin")
 
 {/* <section
         class="mx-auto flex max-w-full items-center justify-center"

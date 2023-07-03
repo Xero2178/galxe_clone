@@ -14,9 +14,9 @@
   </head>
   <body
     class="flex min-h-screen flex-col bg-slate-950 text-white"
-   >
-    <header
-      class="sticky top-0 z-10 mb-3 bg-black text-white backdrop-blur-lg"
+    id="secondOne">
+   <header
+      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-xl" id="headerNav"
     >
       <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
         <section class="flex flex-1 items-center justify-between">
@@ -51,9 +51,9 @@
                 arrow_drop_down
               </div></div>
               <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop2">
-                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Profile</div></a>
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg" id="connectBtn1">Profile</div></a>
                 
-                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">Passport</div></a>
+                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg" id="connectBtn2">Passport</div></a>
               </div>
             </a>
             </li>
@@ -61,8 +61,151 @@
               <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect3"><div class="flex"><div>More</div><div class="material-symbols-outlined pt-1 pl-1">
                 arrow_drop_down
               </div></div>
-              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8 z-30" id="exploreDrop3">
-                  <div>
+              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8" id="exploreDrop3">
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Brand Kit</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Press Kit</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Instagram</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="space-y-2 text-slate-300">
+                    <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Help Center</a
+                      >
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
+                    </li>
+                    <li>
+                      <a href="" class="text-slate-300 hover:text-blue-600"
+                        >Apply for Your Space</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+            </li>
+          </ul>
+        </section>
+        <section class="flex justify-between gap-8">
+          <a href="" class="hidden xl:block"
+            ><button class="rounded-2xl bg-blue-600 px-4 py-2 font-medium">
+              2-years Anniversary Celebration
+            </button></a
+          >
+          <button class="rounded-2xl px-3 py-2 font-medium border hidden xl:block " id="connectBtn3">
+              Connect Wallet
+            </button>
+
+          <button
+            class="relative block h-8 w-8 cursor-pointer text-3xl xl:hidden"
+            id="hamburger-button"
+          >
+            <div
+              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+            ></div>
+          </button>
+        </section>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 justify-center hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl px-6 backdrop-blur-lg absolute min-h-screen xl:hidden"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                    &times;
+                </button> -->
+
+               <div class="overflow-y-scroll">
+                <nav
+                class="flex flex-col py-2 text-xl text-left font-bold h-[500px] "
+                aria-label="mobile"
+              >
+                <div class="py-6 flex items-center border-b border-gray-700 justify-between animate-open-menu" id="mainDrop1">
+                  <div class="hover:opacity-90" id="dropDown1"
+                  ><span class=""><a href="./index2.html">Explore</a></span></div
+                >
+                <div class="material-symbols-outlined pt-1 pl-1 float-right">
+                  arrow_drop_down</div>
+      
+                  
+                </div>
+                <div class="w-full flex-col hidden origin-top animate-open-minimenu" id="dropUp1">
+                  <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Campaign</a>
+                <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4">MintList</a>
+                <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700 " id="connectBtn4">Following</div>
+                </div>
+                
+                <a href="./index4.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700">Spaces</a>
+                <a href="./index5.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
+                  >Credentials</a
+                >
+                <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
+                  >Solutions</a
+                >
+                <div class="py-6 flex items-center border-b border-gray-700 justify-between" id="mainDrop2">
+                  <div class="hover:opacity-90" id="dropDown2"
+                  ><span class=""><a href="./index2.html">Galxe ID</a></span></div
+                >
+                <div class="material-symbols-outlined pt-1 pl-1 float-right">
+                  arrow_drop_down</div>
+      
+                  
+                </div>
+                <div class="w-full flex-col hidden origin-top animate-open-minimenu" id="dropUp2">
+                  <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-3 " id="connectBtn5">Profile</div>
+                <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700 " id="connectBtn6">Passport</div>
+                </div>
+                
+                <div class="py-6 flex items-center">
+                  <a href="" class="w-full hover:opacity-90"
+                  >More</a
+                >
+                <div class="material-symbols-outlined pt-1 pl-1 float-right">
+                  arrow_drop_down</div>
+                </div>
+                <div class="flex-col w-full hidden">
+                  <div class="w-full flex-col">
                     <ul class="space-y-2 text-slate-300">
                       <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
                       <li>
@@ -123,154 +266,15 @@
                       </li>
                     </ul>
                   </div>
-              </div>
-        </section>
-        <section class="flex justify-between gap-8">
-          <a href="" class="hidden xl:block"
-            ><button class="rounded-2xl bg-blue-600 px-4 py-2 font-medium">
-              2-years Anniversary Celebration
-            </button></a
-          >
-          <a href="" class="hidden xl:block"
-            ><button class="rounded-2xl px-3 py-2 font-medium border">
-              Connect Wallet
-            </button></a
-          >
-
-          <button
-            class="relative block h-8 w-8 cursor-pointer text-3xl xl:hidden"
-            id="hamburger-button"
-          >
-            <div
-              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
-            ></div>
-          </button>
-        </section>
+                </div>
+                
+              </nav>
+               </div>
+               <button class="rounded-lg text-center bg-blue-600 text-xl text-white w-full py-3 mt-8 mb-16" id="connectBtn7">Connect Wallet</button> 
+              </header>
+               
+               
       </section>
-      <section
-        id="mobile-menu"
-        class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black to-slate-900 text-5xl px-6 z-30"
-      >
-        <!-- <button class="text-8xl self-end px-6">
-                    &times;
-                </button> -->
-
-                <div class="overflow-y-scroll max-h-screen">
-                  <nav
-                  class="flex flex-col py-8 text-xl text-left font-bold"
-                  aria-label="mobile"
-                >
-                  <div class="py-6 flex items-center border-b border-gray-700 justify-between animate-open-menu" id="mainDrop1">
-                    <div class="hover:opacity-90" id="dropDown1"
-                    ><span class=""><a href="./index2.html">Explore</a></span></div
-                  >
-                  <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                    arrow_drop_down</div>
-        
-                    
-                  </div>
-                  <div class="w-full flex-col hidden" id="dropUp1">
-                    <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Campaign</a>
-                  <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4">MintList</a>
-                  <a href="./index5.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700">Following</a>
-                  </div>
-                  
-                  <a href="./index4.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700">Spaces</a>
-                  <a href="./index5.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
-                    >Credentials</a
-                  >
-                  <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
-                    >Solutions</a
-                  >
-                  <div class="py-6 flex items-center border-b border-gray-700 justify-between" id="mainDrop2">
-                    <div class="hover:opacity-90" id="dropDown2"
-                    ><span class=""><a href="./index2.html">Galxe ID</a></span></div
-                  >
-                  <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                    arrow_drop_down</div>
-        
-                    
-                  </div>
-                  <div class="w-full flex-col hidden" id="dropUp2">
-                    <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Profile</a>
-                  <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700">Passport</a>
-                  </div>
-                  
-                  <div class="py-6 flex items-center">
-                    <a href="" class="w-full hover:opacity-90"
-                    >More</a
-                  >
-                  <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                    arrow_drop_down</div>
-                  </div>
-                  <div class="flex-col w-full hidden">
-                    <div class="w-full flex-col">
-                      <ul class="space-y-2 text-slate-300">
-                        <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600"
-                            >Brand Kit</a
-                          >
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600"
-                            >Press Kit</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul class="space-y-2 text-slate-300">
-                        <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600"
-                            >Instagram</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul class="space-y-2 text-slate-300">
-                        <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600"
-                            >Help Center</a
-                          >
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
-                        </li>
-                        <li>
-                          <a href="" class="text-slate-300 hover:text-blue-600"
-                            >Apply for Your Space</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button class="rounded-lg text-center bg-blue-600 text-xl text-white w-full py-3 mt-16 mb-16">Connect Wallet</button>
-                </nav>
-                 </div>
-      </section>
-    </header>
     <main class="flex flex-col w-full py-4 px-6 sm:px-12 lg:px-20">
       <section class="flex justify-start items-center space-x-6 mb-4">
         <h1 class="text-white text-2xl font-bold md:text-3xl"><a href="./index2.html" class="focus:text-blue-600">Campaign</a></h1>
@@ -404,7 +408,7 @@
       <section class="flex items-center box-border w-full">
         <section class="grid grid-cols-2 gap-4 lg:grid-cols-3 flex-wrap justify-between w-full overflow-hidden xl:grid-cols-4">
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 9.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 9.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               <marquee behavior="" direction="">
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
@@ -424,7 +428,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 8.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full">
+            <img src="./img/Campaign 8.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -442,7 +446,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 7.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 7.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -460,7 +464,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 10.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full">
+            <img src="./img/Campaign 10.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full">
             <div class="mb-2">
               <marquee behavior="" direction="">
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4">
@@ -480,7 +484,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 6.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 6.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -498,7 +502,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 1.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 1.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -516,7 +520,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 2.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 2.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm mr-4 ml-4">
@@ -536,7 +540,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 3.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 3.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -554,7 +558,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 4.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 4.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -572,7 +576,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 5.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 5.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -590,7 +594,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 11.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 11.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -608,7 +612,7 @@
 
           </div>
           <div class="bg-gray-900 rounded-xl hover:scale-105 transition-all duration-500 delay-100">
-            <img src="./img/Campaign 12.jpg" alt="" class="h-64 mb-4 rounded-t-xl w-full object-cover">
+            <img src="./img/Campaign 12.jpg" alt="" class="h-52 mb-4 rounded-t-xl w-full object-cover">
             <div class="mb-2">
               
                 <button class="border border-white rounded-xl px-4 font-semibold text-white text-sm ml-4">
@@ -626,11 +630,145 @@
 
           </div>
           
+          
         </section>
       </section>
     </main>
     
-
+    <div class="border hidden flex-col justify-center absolute" id="walletCon">
+      <div class="fixed bg-black opacity-80 w-full h-screen z-20 top-0 left-0 hidden" id="opaqueBody"></div>
+      <div class="w-5/6  bg-gray-900 fixed top-[15%] translate-y-[-50%] rounded-2xl px-4 py-5 hidden z-20 max-w-3xl left-[10%] lg:left-[20%] xl:left-[25%] translate-x-[-50%] animate-wallet-options animate-wallet-scale" id="connectWallet">
+        <h1 class="text-xl font-bold mb-7">Connect Wallet</h1>
+        <p class="font-thin text-sm mb-6">By connecting a wallet, you agree to <span class="text-blue-600">Terms of Services</span> and <span class="text-blue-600">Privacy Policy</span></p>
+        <div class="overflow-y-hidden">
+          <div class="grid grid-cols-1 gap-2 md:grid-cols-2 max-h-[450px] overflow-y-scroll">
+            <div class="p-3 bg-indigo-600 rounded-md flex max-h-[67px]">
+              <img src="./img/coinbase-logo.bd9aa10.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Coinbase</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/coinbase-shadow.4e71a76.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-orange-600 rounded-md flex max-h-[67px]">
+              <img src="./img/metamask-logo.8bf6a94.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">MetaMask</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/metamask-shadow.019298f.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-blue-500 rounded-md flex max-h-[67px]">
+              <img src="./img/walletconnect-logo.25f5202.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">WalletConnect</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/walletconnect-shadow.25dc322.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-purple-700 rounded-md flex max-h-[67px]">
+              <img src="./img/bitkeep-logo.49d1fbb.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">BitKeep</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/bitkeep-shadow.7039e65.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-black rounded-md flex max-h-[67px]">
+              <img src="./img/okx-logo.b6d5a20.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">OKX</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/download (10).png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-sky-600 rounded-md flex max-h-[67px]">
+              <img src="./img/blocto-logo.7c4f8bf (1).png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Blocto</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/blocto-shadow.264b37c.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-pink-400 rounded-md flex max-h-[67px]">
+              <img src="./img/petra-logo.49d7e3b.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Petra</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/petra-shadow.91c1f55.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-violet-700 rounded-md flex max-h-[67px]">
+              <img src="./img/fewcha-logo.d87f459.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Fewcha</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/fewcha-shadow.6ea3646.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-emerald-500 rounded-md flex max-h-[67px]">
+              <img src="./img/clover-logo.484c5c4.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Clover</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/clover-shadow.2021d4b.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+            <div class="p-3 bg-blue-400 rounded-md flex max-h-[67px]">
+              <img src="./img/download.png" alt="" class="h-12 w-12">
+              <div class="flex flex-col w-1/2 pl-6">
+                <h1 class="text-xl font-bold mb-1">Keplr</h1>
+                <div class="flex justify-between items-baseline max-w-[60px]">
+                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                </div>
+              </div>
+              <div class="flex justify-end items-center flex-auto">
+                <img src="./img/keplr-shadow.6b819e5.png" alt="" class="w-16 h-14">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="absolute z-20 text-4xl right-7 top-2 font-bold hidden cursor-pointer" id="times">&times;</div>
+       </div>
+     </div>
+     
     <script src="./js/style.js" defer></script>
   </body>
 </html>
