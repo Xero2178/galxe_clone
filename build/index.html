@@ -1,1165 +1,333 @@
 <!DOCTYPE html>
-<html lang="en" class="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GALXE</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  </head>
-  <body
-    class="flex min-h-screen flex-col text-white overflow-x-hidden w-full origin-center" id="first">
-    <header
-      class="sticky top-0 z-10 mb-8 bg-transparent text-white backdrop-blur-xl" id="headerNav"
-    >
-      <section class="max-w-auto mx-auto flex justify-between py-4 px-8">
-        <section class="flex flex-1 items-center justify-between">
-          <ul class="flex space-x-8 align-baseline text-lg">
-            <li>
-              <a href="./index.html"
-                ><img src="./img/new-logo.bc3e2ed.svg" alt="" width="100%"
-              /></a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative" id="exploreSect1"><div class="flex"><div>Explore</div><div class="material-symbols-outlined pt-1 pl-1">
-                arrow_drop_down
-              </div></div>
-              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop1">
-                <a href="./index2.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg">Campaign</div></a>
+</head>
+<body class="bg-sky-400 flex justify-center items-center place-content-center">
+    <section class="w-4/5 my-8 bg-slate-300 rounded-md max-w-3xl flex flex-col py-4 just">
+        <div class="flex flex-col justify-center ">
+            <div class="flex flex-col items-center">
+                <h1 class="text-3xl font-bold text-center mb-12 bg-orange-300 px-6 py-3 rounded-tr-xl rounded-bl-xl">Stack<span class="text-green-800">Clique</span></h1>
+            <input type="text" placeholder="First Name" class="w-4/5 h-12 mb-5 rounded-xl px-5 focus:outline-none">
+            <input type="text" placeholder="Middle Name" class="w-4/5 h-12 mb-5 rounded-xl px-5 focus:outline-none">
+            <input type="text" placeholder="Last Name" class="w-4/5 h-12 mb-5 rounded-xl px-5 focus:outline-none">
+
+            <input type="email" placeholder="Email address" class="w-4/5 h-12 mb-5 rounded-xl px-5 focus:outline-none">
+            <input type="password" placeholder="Password" class="w-4/5 h-12 mb-5 rounded-xl px-5 focus:outline-none">
+            
+            </div>
+            <div class="flex w-4/5 justify-between mx-[10%] bg-white h-12 items-center rounded-xl mb-5">
+                <div class="px-5 font-bold text-lg" id="countryFlag">Country</div>
+                <div class="w-28 border-l-2 border-black focus:outline-none">
+                    <div class="flex justify-center items-center">
+                        <select name="" id="" class="focus:outline-none">
+                            <option value="">Nigeria</option>
+                            <option value="">Ghana</option>
+                            <option value="">Bolivia</option>
+                            <option value="">Australia</option>
+                            <option value="">Croatia</option>
+                            <option value="">Qatar</option>
+                            <option value="">Israel</option>
+                            <option value="">Portugal</option>
+                            <option value="">Uruguay</option>
+                            <option value="">Romania</option>
+                            <option value="">Denmark</option>
+                            <option value="">South</option>
+                            <option value="">Belgium</option>
+                            <option value="">Philippines</option>
+                            
+                        </select>
+                </div>
+                </div>
+            </div>
+            <div class="flex w-4/5  mx-[10%] bg-white h-12 items-center rounded-xl">
                 
-                <a href="./index3.html"><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg">MintList</div></a>
-              </div>
-            </a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="./index4.html" class="ease-in-out hover:text-blue-600">Spaces</a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="./index5.html" class="ease-in-out hover:text-blue-600">Credentials</a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="" class="ease-in-out hover:text-blue-600">Solutions</a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect2"><div class="flex"><div>Galxe ID</div><div class="material-symbols-outlined pt-1 pl-1">
-                arrow_drop_down
-              </div></div>
-              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-52 bg-black text-gray-300 text-base hidden" id="exploreDrop2">
-                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-t-lg" id="connectBtn1">Profile</div></a>
-                
-                <a href=""><div class="py-2 hover:bg-slate-800 hover:bg-opacity-70 pl-6 rounded-b-lg" id="connectBtn2">Passport</div></a>
-              </div>
-            </a>
-            </li>
-            <li class="hidden xl:block">
-              <a href="./index2.html" class="ease-in-out hover:text-blue-600 focus:text-blue-600 relative pb-4" id="exploreSect3"><div class="flex"><div>More</div><div class="material-symbols-outlined pt-1 pl-1">
-                arrow_drop_down
-              </div></div>
-              <div class="absolute top-12 border border-1 border-gray-700 rounded-lg w-fit px-2 py-4 bg-black text-gray-300 text-base hidden space-x-8" id="exploreDrop3">
-                <div>
-                  <ul class="space-y-2 text-slate-300">
-                    <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600"
-                        >Brand Kit</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600"
-                        >Press Kit</a
-                      >
-                    </li>
-                  </ul>
+                <div class="w-24 border-r-2 border-black focus:outline-none cursor-pointer mx-[5%]">
+                    <div class="flex justify-center items-center"><img src="./img/nigeria.png" alt="" class="w-6"  id="changeImg"><span id="register">+234</span> <span class="material-symbols-outlined">
+                        expand_more
+                        </span></div>
                 </div>
-                <div>
-                  <ul class="space-y-2 text-slate-300">
-                    <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600"
-                        >Instagram</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <ul class="space-y-2 text-slate-300">
-                    <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600"
-                        >Help Center</a
-                      >
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
-                    </li>
-                    <li>
-                      <a href="" class="text-slate-300 hover:text-blue-600"
-                        >Apply for Your Space</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </a>
-            </li>
-          </ul>
-        </section>
-        <section class="flex justify-between gap-8">
-          <a href="" class="hidden xl:block"
-            ><button class="rounded-2xl bg-blue-600 px-4 py-2 font-medium">
-              2-years Anniversary Celebration
-            </button></a
-          >
-          <button class="rounded-2xl px-3 py-2 font-medium border hidden xl:block " id="connectBtn3">
-              Connect Wallet
-            </button>
-
-          <button
-            class="relative block h-8 w-8 cursor-pointer text-3xl xl:hidden"
-            id="hamburger-button"
-          >
-            <div
-              class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
-            ></div>
-          </button>
-        </section>
-      </section>
-      <section
-        id="mobile-menu"
-        class="top-68 justify-center hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl px-6 backdrop-blur-lg absolute min-h-screen xl:hidden"
-      >
-        <!-- <button class="text-8xl self-end px-6">
-                    &times;
-                </button> -->
-
-               <div class="overflow-y-scroll">
-                <nav
-                class="flex flex-col py-2 text-xl text-left font-bold h-[500px] "
-                aria-label="mobile"
-              >
-                <div class="py-6 flex items-center border-b border-gray-700 justify-between animate-open-menu" id="mainDrop1">
-                  <div class="hover:opacity-90" id="dropDown1"
-                  ><span class=""><a href="./index2.html">Explore</a></span></div
-                >
-                <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                  arrow_drop_down</div>
-      
-                  
-                </div>
-                <div class="w-full flex-col hidden origin-top animate-open-minimenu" id="dropUp1">
-                  <a href="./index2.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-3">Campaign</a>
-                <a href="./index3.html" class="w-full hover:opacity-90 text-slate-200 font-thin py-4">MintList</a>
-                <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700 " id="connectBtn4">Following</div>
-                </div>
-                
-                <a href="./index4.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700">Spaces</a>
-                <a href="./index5.html" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
-                  >Credentials</a
-                >
-                <a href="" class="w-full py-6 hover:opacity-90 border-b border-gray-700"
-                  >Solutions</a
-                >
-                <div class="py-6 flex items-center border-b border-gray-700 justify-between" id="mainDrop2">
-                  <div class="hover:opacity-90" id="dropDown2"
-                  ><span class=""><a href="./index2.html">Galxe ID</a></span></div
-                >
-                <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                  arrow_drop_down</div>
-      
-                  
-                </div>
-                <div class="w-full flex-col hidden origin-top animate-open-minimenu" id="dropUp2">
-                  <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-3 " id="connectBtn5">Profile</div>
-                <div href="" class="w-full hover:opacity-90 text-slate-200 font-thin py-4 border-b border-gray-700 " id="connectBtn6">Passport</div>
-                </div>
-                
-                <div class="py-6 flex items-center">
-                  <a href="" class="w-full hover:opacity-90"
-                  >More</a
-                >
-                <div class="material-symbols-outlined pt-1 pl-1 float-right">
-                  arrow_drop_down</div>
-                </div>
-                <div class="flex-col w-full hidden">
-                  <div class="w-full flex-col">
-                    <ul class="space-y-2 text-slate-300">
-                      <li class="mb-2 text-md font-bold text-blue-600">ABOUT</li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600"
-                          >Brand Kit</a
-                        >
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600"
-                          >Press Kit</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul class="space-y-2 text-slate-300">
-                      <li class="mb-2 text-md font-bold text-blue-600">COMMUNITY</li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600"
-                          >Instagram</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <ul class="space-y-2 text-slate-300">
-                      <li class="mb-2 text-md font-bold text-blue-600">SUPPORT</li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600"
-                          >Help Center</a
-                        >
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
-                      </li>
-                      <li>
-                        <a href="" class="text-slate-300 hover:text-blue-600"
-                          >Apply for Your Space</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                
-              </nav>
-               </div>
-               <button class="rounded-lg text-center bg-blue-600 text-xl text-white w-full py-3 mt-8 mb-16" id="connectBtn7">Connect Wallet</button> 
-               
-               
-               
-      </section>
-    </header>
-    <main class="mx-5 text-center">
-      
-      <h1
-        class="mb-24 max-w-7xl text-center text-3xl font-extrabold md:text-4xl lg:mx-auto lg:text-5xl xl:text-6xl"
-      >
-        Build Your Digital Identity and Earn
-        <span class="text-blue-600">Tokens</span>
-      </h1>
-      <section
-        class="mx-auto flex max-w-full items-center justify-center"
-      >
-        
-          <div class="slide-container w-full swiper">
-            <div class="slide-content  overflow-hidden ">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card swiper-slide"mb-16>
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full border bg-gray-950 rounded-2xl border-gray-700 p-3">
-                      <img src="./img/rubic icon.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1679625102518-image (3).webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1680097576409-Slide 16_9 - 1.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1680179170335-2023-03-30 19.09.09.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1680252918643-联名活动1 (1).webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1680252993469-Multichain.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1686886073376-image (11).webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1686717346971-iguverse_Galxe_MetaIguana.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card swiper-slide mb-16">
-                  <div class="image-content gap-1">
-                    <span class="overlay"></span>
-                    <div class="card-image relative h-80 w-full bg-gray-950 rounded-2xl border border-gray-700 p-3">
-                      <img src="./img/1686741681342-2023-06-14 18.05.29.webp" alt="" class="card-img h-[70%] w-[100%] object-cover rounded-t-2xl">
-
-                      <h2 class="mt-2 text-left text-2xl font-thin">Rubic</h2>
-                      <p class="text-md mt-2 truncate text-left font-bold xl:text-lg">
-                      Swap to Earn: The Innovative Way
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <input type="tel" name="" id="" class=" ml-[5%] focus:outline-none " placeholder="Phone Number" class="text-lg">
             </div>
-
-            <!-- <div class="swiper-button-prev" ></div>
-            <div class="swiper-button-next" ></div>
-            <div class="swiper-pagination"></div> -->
-          </div>
-      </section>
-    </main>
-    <section
-      class="flex min-h-fit flex-col  p-8 bg-gradient-to-r from-blue-400 via-blue-800 to-blue-500"
-    >
-      <div class="mb-8 flex align-baseline">
-        <img src="./img/telescope.png" alt="" width="40px" />
-        <h2 class="px-2 text-3xl font-bold">Galxe Selects</h2>
-      </div>
-      <div class="flex w-full space-x-2">
-        <div class="h-72 w-full rounded-lg bg-gray-900 p-3 md:w-1/2 lg:w-1/3">
-          <div
-            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
-          >
-            Achieve web3 creditworthiness and reap your rewards!
-          </div>
-          <button
-            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
-          >
-            OAT</button
-          ><br />
-          <p class="truncate px-3 font-bold">
-            Cred Protocol: Web3 credit score is 'Good' or better (April '23)
-          </p>
-          <img
-            src="./img/spaces-1.webp"
-            alt=""
-            class="float-right mt-4 mr-4 h-24 w-24"
-          />
-          <div class="flex px-3 text-base font-light text-gray-300">
-            <p class="pt-1">Cred Protocol</p>
-          </div>
+            
+            
         </div>
-        <div
-          class="hidden h-72 w-full rounded-lg bg-gray-900 p-3 md:block md:w-1/2 lg:w-1/3"
-        >
-          <div
-            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
-          >
-            Experience the power of decentralization and become early adopters!
-          </div>
-          <button
-            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
-          >
-            NFT</button
-          ><br />
-          <p class="truncate px-3 font-bold">
-            Super Protocol Testnet Phase2 Incentivized: Ear
-          </p>
-          <img
-            src="./img/zklink-logo2.webp"
-            alt=""
-            class="float-right h-36 w-36"
-          />
-          <div class="flex px-3 text-base font-light text-gray-300">
-            <p class="pt-1">Super Protocol</p>
-          </div>
-        </div>
-
-        <div
-          class="hidden h-72 w-full rounded-lg bg-gray-900 p-3 md:w-1/2 lg:block lg:w-1/3"
-        >
-          <div
-            class="mb-4 h-20 w-full truncate rounded-md bg-blue-500 p-3 font-semibold"
-          >
-            Embark on quests with Optimism and unlock exclusive NFTs!
-          </div>
-          <button
-            class="mx-4 mb-3 rounded-2xl border bg-transparent px-3 font-semibold"
-          >
-            NFT</button
-          ><br />
-          <p class="px-3 font-bold">Optimism Grant Quests</p>
-          <img
-            src="./img/carbon logo.webp"
-            alt=""
-            class="float-right h-28 w-28 rounded-full"
-          />
-          <div class="flex px-3 text-base font-light text-gray-300">
-            <p class="pt-1">Via Protocol</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class=" flex min-h-screen flex-col p-8 bg-gray-950">
-      <!-- <div class="flex justify-between align-baseline">
-            <h2 class="text-4xl font-extrabold">Trending</h2>
-            <button class="px-6 py-3 font-bold border border-gray-500 rounded-lg">View More</button>
-        </div> -->
-      <div class="mt-12 flex flex-col ">
-        <div class="flex justify-between align-baseline">
-          <h2 class="text-4xl font-extrabold">Trending</h2>
-          <button
-            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
-          >
-            View More
-          </button>
-        </div>
-        <div class="flex justify-between space-x-4">
-          <div
-            class="bg-gray-950 mt-5 flex w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <button
-              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
-            >
-              OAT
-            </button>
-            <div class="flex">
-              <div class="p-6">
-                <h2 class="mb-5 truncate text-xl font-bold">
-                  SPACE ID x Notifi AMA OAT
-                </h2>
-                <p class="mb-5 text-sm font-thin text-gray-300">
-                  8.10K participants
-                </p>
-                <p class="text-xl font-thin text-gray-300">
-                  <img
-                    src="./img/trend-1.webp"
-                    alt=""
-                    class="float-left mr-2 h-8 w-8"
-                  />
-                  SPACE ID <img src="" alt="" />
-                </p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <button
-              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
-            >
-              OAT
-            </button>
-            <div class="flex">
-              <div class="p-6">
-                <h2 class="mb-5 truncate text-xl font-bold">
-                  OpenEx x Hibiki Run
-                </h2>
-                <p class="mb-5 text-sm font-thin text-gray-300">
-                  4.34K participants
-                </p>
-                <p class="text-xl font-thin text-gray-300">
-                  <img
-                    src="./img/trend-2.webp"
-                    alt=""
-                    class="float-left mr-2 h-8 w-8"
-                  />
-                  OpenEx
-                </p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
-          >
-            <button
-              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
-            >
-              OAT
-            </button>
-            <div class="flex">
-              <div class="p-6">
-                <h2 class="mb-5 truncate text-xl font-bold">
-                  5 Yuli Mystery Boxes Up
-                </h2>
-                <p class="mb-5 text-sm font-thin text-gray-300">
-                  9.31K participants
-                </p>
-                <p class="text-xl font-thin text-gray-300">
-                  <img
-                    src="./img/trend-3.webp"
-                    alt=""
-                    class="float-left mr-2 h-8 w-8"
-                  />
-                  Yeehal Bingo
-                </p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 mt-5 hidden w-full flex-col rounded-2xl border border-slate-700 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
-          >
-            <button
-              class="mx-6 mb-3 mt-4 w-14 rounded-2xl border bg-transparent px-3 py-1 text-sm font-medium"
-            >
-              OAT
-            </button>
-            <div class="flex">
-              <div class="p-6">
-                <h2 class="mb-5 truncate text-xl font-bold">300K Discord</h2>
-                <p class="mb-5 text-sm font-thin text-gray-300">
-                  1.73K participants
-                </p>
-                <p class="text-xl font-thin text-gray-300">
-                  <img
-                    src="./img/trend-4.webp"
-                    alt=""
-                    class="float-left mr-2 h-8 w-8"
-                  />
-                  Shardeum
-                </p>
-              </div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
-        >
-          View More
-        </button>
-      </div>
-      <div class="mt-12 flex flex-col">
-        <div class="flex justify-between align-baseline">
-          <h2 class="text-4xl font-extrabold">Token Reward</h2>
-          <button
-            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
-          >
-            View More
-          </button>
-        </div>
-        <div class="flex justify-between space-x-4">
-          <div
-            class="mt-5 flex w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <h1 class="py-8 px-11 text-3xl font-bold">
-              <img
-                src="./img/USDT.png"
-                alt=""
-                class="float-left mr-3 h-10 w-10"
-              />25 USDT
-            </h1>
-            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
-            <p class="text-md px-11 py-4 font-medium">
-              <img
-                src="./img/token 1.webp"
-                alt=""
-                class="float-left mr-2 h-6 w-6 rounded-full"
-              />
-              Label Foundation
-            </p>
-            <p class="truncate px-11 py-4 text-lg font-bold">
-              CBT AIRDROP! Listen and Earn with Label Foundation
-            </p>
-          </div>
-          <div
-            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <h1 class="py-8 px-11 text-3xl font-bold">
-              <img
-                src="./img/USDT.png"
-                alt=""
-                class="float-left mr-3 h-10 w-10"
-              />25 USDT
-            </h1>
-            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
-            <p class="text-md px-11 py-4 font-medium">
-              <img
-                src="./img/token 2.webp"
-                alt=""
-                class="float-left mr-2 h-6 w-6 rounded-full"
-              />
-              ZeroSwap
-            </p>
-            <p class="truncate px-11 py-4 text-lg font-bold">
-              ZeroSwap x DZap Partnership
-            </p>
-          </div>
-          <div
-            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
-          >
-            <h1 class="py-8 px-11 text-3xl font-bold">
-              <img
-                src="./img/usdc-icon.e2362f6.png"
-                alt=""
-                class="float-left mr-3 h-10 w-10"
-              />20 USDC
-            </h1>
-            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
-            <p class="text-md px-11 py-4 font-medium">
-              <img
-                src="./img/token 3.webp"
-                alt=""
-                class="float-left mr-2 h-6 w-6 rounded-full"
-              />
-              RocketX
-            </p>
-            <p class="truncate px-11 py-4 text-lg font-bold">
-              ARTEMIS 3.0 | Mute.io <> RocketX
-            </p>
-          </div>
-          <div
-            class="mt-5 hidden w-full flex-col rounded-2xl bg-gray-900 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
-          >
-            <h1 class="py-8 px-11 text-3xl font-bold">
-              <img
-                src="./img/usdc-icon.e2362f6.png"
-                alt=""
-                class="float-left mr-3 h-10 w-10"
-              />10 USDC
-            </h1>
-            <hr class="mx-auto w-5/6 bg-gray-900 opacity-10" />
-            <p class="text-md px-11 py-4 font-medium">
-              <img
-                src="./img/Token 4.webp"
-                alt=""
-                class="float-left mr-2 h-6 w-6 rounded-full"
-              />
-              Reneverse
-            </p>
-            <p class="truncate px-11 py-4 text-lg font-bold">
-              Reneverse Launch
-            </p>
-          </div>
-        </div>
-        <button
-          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
-        >
-          View More
-        </button>
-      </div>
-      <div class="mt-12 mb-12 flex flex-col">
-        <div class="flex justify-between align-baseline">
-          <h2 class="text-4xl font-extrabold">Spaces</h2>
-          <button
-            class="hidden rounded-lg border border-gray-500 px-6 py-3 font-bold md:block"
-          >
-            View More
-          </button>
-        </div>
-        <div class="flex justify-between space-x-4">
-          <div
-            class="bg-gray-950 relative mt-5 flex w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <div
-              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
-            >
-              New
-            </div>
-            <div class="flex px-2 py-4">
-              <img
-                src="./img/Linea space.webp"
-                alt=""
-                class="mx-3 h-20 w-20 rounded-full"
-              />
-              <div class="flex w-4/5 flex-col">
-                <h2 class="mb-6 text-lg font-bold">Linea</h2>
-                <button
-                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
-                >
-                  1 campaign is active!
-                </button>
-              </div>
-            </div>
-            <div class="flex px-6 py-4">
-              <div class="flex w-1/5 flex-col items-center">
-                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
-                <img
-                  src="./img/token 1.webp"
-                  alt=""
-                  class="w-6 rounded-full"
-                />
-              </div>
-              <div class="ml-4 w-4/5">
-                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
-                <p class="text-sm text-white">Infrastructure, Layer 2</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 md:flex md:w-1/2 lg:w-1/3 xl:w-1/4"
-          >
-            <div
-              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
-            >
-              New
-            </div>
-            <div class="flex px-2 py-4">
-              <img
-                src="./img/spaces-1.webp"
-                alt=""
-                class="mx-3 h-20 w-20"
-              />
-              <div class="flex w-4/5 flex-col">
-                <h2 class="mb-6 text-lg font-bold">Infinity Exchange</h2>
-                <button
-                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
-                >
-                  1 campaign is active!
-                </button>
-              </div>
-            </div>
-            <div class="flex px-6 py-4">
-              <div class="flex w-1/5 flex-col items-center">
-                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
-                <img
-                  src="./img/token 1.webp"
-                  alt=""
-                  class="w-6 rounded-full"
-                />
-              </div>
-              <div class="ml-4 w-4/5">
-                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
-                <p class="truncate text-sm text-white">
-                  DeFi, Dex, Staking, YieldFarming, Swapping
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 lg:flex lg:w-1/3 xl:w-1/4"
-          >
-            <div
-              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
-            >
-              New
-            </div>
-            <div class="flex px-2 py-4">
-              <img
-                src="./img/Aventis space.webp"
-                alt=""
-                class="mx-3 h-20 w-20 rounded-full"
-              />
-              <div class="flex w-4/5 flex-col">
-                <h2 class="mb-6 text-lg font-bold">Aventis Metaverse</h2>
-                <button
-                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
-                >
-                  1 campaign is active!
-                </button>
-              </div>
-            </div>
-            <div class="flex px-6 py-4">
-              <div class="flex w-1/5 flex-col items-center">
-                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
-                <img
-                  src="./img/token 1.webp"
-                  alt=""
-                  class="w-6 rounded-full"
-                />
-              </div>
-              <div class="ml-4 w-4/5">
-                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
-                <p class="truncate text-sm text-white">
-                  NFT, DAO, Play-To Earn, Metaverse world
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="bg-gray-950 relative mt-5 hidden w-full flex-col rounded-2xl border border-gray-500 transition-all ease-in-out hover:-translate-y-1 lg:w-1/3 xl:flex xl:w-1/4"
-          >
-            <div
-              class="rounded-ee-xl absolute h-6 w-12 rounded-tl-xl bg-green-500 text-center font-bold"
-            >
-              New
-            </div>
-            <div class="flex px-2 py-4">
-              <img
-                src="./img/zklink-logo2.webp"
-                alt=""
-                class="mx-3 h-20 w-20"
-              />
-              <div class="flex w-4/5 flex-col">
-                <h2 class="mb-6 text-lg font-bold">zkLink</h2>
-                <button
-                  class="w-11/12 rounded-lg bg-gray-600 p-2 text-left text-xs font-bold"
-                >
-                  1 campaign is active!
-                </button>
-              </div>
-            </div>
-            <div class="flex px-6 py-4">
-              <div class="flex w-1/5 flex-col items-center">
-                <h2 class="mb-2 text-sm text-slate-500">Backers</h2>
-                <img
-                  src="./img/token 1.webp"
-                  alt=""
-                  class="w-6 rounded-full"
-                />
-              </div>
-              <div class="ml-4 w-4/5">
-                <h2 class="mb-3 text-sm text-slate-500">Categories</h2>
-                <p class="truncate text-sm text-white">
-                  DeFi, NFT, Web3 Infrastructure, linkswap
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="mt-4 rounded-md border border-gray-500 bg-transparent py-2 text-xl font-bold md:hidden"
-        >
-          View More
-        </button>
-      </div>
-      
-    </section>
-    <section class="flex flex-col bg-black py-8 px-8 md:min-h-fit">
-      <div class="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
-        <div class="col-span-2 mb-8 md:col-span-4 lg:col-span-3">
-          <h2 class="">
-            <a href=""
-              ><img src="./img/new-logo.bc3e2ed.svg" alt="" class="mb-8"
-            /></a>
-          </h2>
-          <p class="mb-8 w-3/5 text-slate-200">
-            Galxe is the leading platform for building Web3 community. With over
-            30 million users, Galxe has propelled the growth of Optimism,
-            Polygon, Arbitrum, and more than 180 partners with reward-based
-            loyalty programs.
-          </p>
-          <button
-            class="rounded-lg border-2 border-blue-700 px-4 py-3 text-center text-lg font-bold text-blue-600"
-          >
-            Get the latest updates
-          </button>
-        </div>
-        <div class="">
-          <ul class="space-y-2 text-slate-300">
-            <li class="mb-2 text-xl font-semibold text-white">GALXE</li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Explore</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Spaces</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Credentials</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Galxe ID</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Solutions</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="space-y-2 text-slate-300">
-            <li class="mb-2 text-xl font-semibold text-white">ABOUT</li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Docs</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Careers</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Brand Kit</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Press Kit</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="space-y-2 text-slate-300">
-            <li class="mb-2 text-xl font-semibold text-white">COMMUNITY</li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Blog</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Twitter</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Telegram</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Discord</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Instagram</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="space-y-2 text-slate-300">
-            <li class="mb-2 text-xl font-semibold text-white">SUPPORT</li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Help Center</a
-              >
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600">Support</a>
-            </li>
-            <li>
-              <a href="" class="text-slate-300 hover:text-blue-600"
-                >Apply for Your Space</a
-              >
-            </li>
-          </ul>
+        <div class="flex flex-col justify-center items-center mt-5">
+            <button class="bg-orange-600 font-bold rounded-lg text-2xl w-4/5 py-2 text-white mb-6"  id="button">Register</button>
+            <div class="text-left"><p class="">Already have an acct? <a href="" class="text-blue-500 underline">Login</a></p></div>
         </div>
         
-      </div>
-      
-      
+        
     </section>
-    <div class="border hidden flex-col justify-center absolute" id="walletCon">
-      <div class="fixed bg-black opacity-80 w-full h-screen z-20 top-0 left-0 hidden" id="opaqueBody"></div>
-      <div class="w-5/6  bg-gray-900 fixed top-[15%] translate-y-[-50%] rounded-2xl px-4 py-5 hidden z-20 max-w-3xl left-[10%] lg:left-[20%] xl:left-[25%] translate-x-[-50%] animate-wallet-options animate-wallet-scale" id="connectWallet">
-        <h1 class="text-xl font-bold mb-7">Connect Wallet</h1>
-        <p class="font-thin text-sm mb-6">By connecting a wallet, you agree to <span class="text-blue-600">Terms of Services</span> and <span class="text-blue-600">Privacy Policy</span></p>
-        <div class="overflow-y-hidden">
-          <div class="grid grid-cols-1 gap-2 md:grid-cols-2 max-h-[450px] overflow-y-scroll">
-            <div class="p-3 bg-indigo-600 rounded-md flex max-h-[67px]">
-              <img src="./img/coinbase-logo.bd9aa10.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Coinbase</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+
+
+
+
+
+
+
+
+
+    <section class="absolute z-20  max-w-3xl h-screen bg-slate-200 top-0 flex-col items-center justify-center hidden w-4/5" id="chooseCont">
+        <h1 class="text-center font-bold text-3xl mb-4 mt-4">Choose Country</h1>
+
+        <div class="flex w-4/5 justify-center items-center h-14 mb-6 mx-auto ">
+            <div class="w-10 flex justify-center items-center bg-white h-full rounded-l-xl"><span class="material-symbols-outlined text-gray-400">
+                search
+                </span></div>
+            <input id="searchInput" type="text" placeholder="Search by country name or dial code" class="w-full h-full rounded-r-xl focus:outline-none">
+        </div>
+
+        <div class="flex flex-col w-4/5 bg-white rounded-xl py-3 text-gray-600 overflow-y-scroll font-bold h-[550px] mx-auto " id="countryContainer">
+            <div class="w-full h-16 flex mb-4 border border-b-black border-none" id="nigeria">
+                <div class="flex justify-center items-center w-1/4">
+                    <img src="./img/nigeria.png" alt="" class="w-16">
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/coinbase-shadow.4e71a76.png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-orange-600 rounded-md flex max-h-[67px]">
-              <img src="./img/metamask-logo.8bf6a94.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">MetaMask</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Nigeria</div>
+                    <div>+234</div>
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/metamask-shadow.019298f.png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-blue-500 rounded-md flex max-h-[67px]">
-              <img src="./img/walletconnect-logo.25f5202.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">WalletConnect</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="flex justify-center items-center w-1/4">
+
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/walletconnect-shadow.25dc322.png" alt="" class="w-16 h-14">
-              </div>
             </div>
-            <div class="p-3 bg-purple-700 rounded-md flex max-h-[67px]">
-              <img src="./img/bitkeep-logo.49d1fbb.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">BitKeep</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+            <div class="w-full h-16 flex mb-4" id="ghana">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/ghana.png" alt="" class="w-16">
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/bitkeep-shadow.7039e65.png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-black rounded-md flex max-h-[67px]">
-              <img src="./img/okx-logo.b6d5a20.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">OKX</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Ghana</div>
+                    <div>+233</div>
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/download (10).png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-sky-600 rounded-md flex max-h-[67px]">
-              <img src="./img/blocto-logo.7c4f8bf (1).png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Blocto</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="flex justify-center items-center w-1/4">
+
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/blocto-shadow.264b37c.png" alt="" class="w-16 h-14">
-              </div>
             </div>
-            <div class="p-3 bg-pink-400 rounded-md flex max-h-[67px]">
-              <img src="./img/petra-logo.49d7e3b.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Petra</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+            <div class="w-full h-16 flex mb-4" id="bolivia">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/bolivia.png" alt="" class="w-16">
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/petra-shadow.91c1f55.png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-violet-700 rounded-md flex max-h-[67px]">
-              <img src="./img/fewcha-logo.d87f459.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Fewcha</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Bolivia</div>
+                    <div>+591</div>
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/fewcha-shadow.6ea3646.png" alt="" class="w-16 h-14">
-              </div>
-            </div>
-            <div class="p-3 bg-emerald-500 rounded-md flex max-h-[67px]">
-              <img src="./img/clover-logo.484c5c4.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Clover</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+                <div class="flex justify-center items-center w-1/4">
+
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/clover-shadow.2021d4b.png" alt="" class="w-16 h-14">
-              </div>
             </div>
-            <div class="p-3 bg-blue-400 rounded-md flex max-h-[67px]">
-              <img src="./img/download.png" alt="" class="h-12 w-12">
-              <div class="flex flex-col w-1/2 pl-6">
-                <h1 class="text-xl font-bold mb-1">Keplr</h1>
-                <div class="flex justify-between items-baseline max-w-[60px]">
-                  <img src="./img/download (2).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (3).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (4).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (5).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (6).png" alt="" class="w-4 h-4 mr-4"><img src="./img/download (7).png" alt="" class="w-4 h-4 mr-4">
+            <div class="w-full h-16 flex mb-4" id="australia">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/australia.png" alt="" class="w-16">
                 </div>
-              </div>
-              <div class="flex justify-end items-center flex-auto">
-                <img src="./img/keplr-shadow.6b819e5.png" alt="" class="w-16 h-14">
-              </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Australia</div>
+                    <div>+61</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
             </div>
-          </div>
+            <div class="w-full h-16 flex mb-4" id="croatia">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/croatia.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Croatia</div>
+                    <div>+385</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="qatar">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/qatar.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Qatar</div>
+                    <div>+974</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="israel">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/israel.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Israel</div>
+                    <div>+972</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="ireland">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/ireland.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Ireland</div>
+                    <div>+353</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="portugal">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/portugal.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Portugal</div>
+                    <div>+351</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="uruguay">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/uruguay.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Uruguay</div>
+                    <div>+598</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="romania">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/romania.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Romania</div>
+                    <div>+40</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="denmark">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/denmark.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Denmark</div>
+                    <div>+45</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="south-africa">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/south-africa.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>South Africa</div>
+                    <div>+27</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="belgium">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/belgium.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Belgium</div>
+                    <div>+32</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="philippines">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/philippines.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>philippines</div>
+                    <div>+63</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="sweden">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/sweden.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Sweden</div>
+                    <div>+46</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="argentina">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/argentina.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Argentina</div>
+                    <div>+54</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="south-korea">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/south-korea.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>South Korea</div>
+                    <div>+82</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+            <div class="w-full h-16 flex mb-4" id="malaysia">
+                <div class="flex justify-center items-center w-1/4" id="nigeria">
+                    <img src="./img/malaysia.png" alt="" class="w-16">
+                </div>
+                <div class="w-2/4 flex flex-col justify-center">
+                    <div>Malaysia</div>
+                    <div>+60</div>
+                </div>
+                <div class="flex justify-center items-center w-1/4">
+
+                </div>
+            </div>
+           
         </div>
         
-        <div class="absolute z-20 text-4xl right-7 top-2 font-bold hidden cursor-pointer" id="times">&times;</div>
-       </div>
-     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/style.js" defer></script>
-  </body>
+    </section>
+    <section class="w-full bg-black absolute h-screen bg-opacity-70 top-0 hidden justify-center items-center" id="registered">
+        <div class="w-4/5 flex justify-center items-center flex-col">
+            <div>
+                <span class="material-symbols-outlined text-white text-4xl">
+                    task_alt
+                    </span>
+            </div>
+                <p class="text-2xl text-white font-bold">Registration Successful</p>
+        </div>
+    </section>
+
+
+
+    <script src="./js/form.js" defer></script>
+</body>
 </html>
